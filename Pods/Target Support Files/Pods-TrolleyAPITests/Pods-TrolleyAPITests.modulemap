@@ -1,0 +1,6 @@
+framework module Pods_TrolleyAPITests {
+  umbrella header "Pods-TrolleyAPITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

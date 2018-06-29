@@ -52,11 +52,11 @@ import Alamofire
         cfg.connectionProxyDictionary = proxyConfiguration
         
 
-         var  requestManager = Alamofire.SessionManager.default
+      //   var  requestManager = Alamofire.SessionManager.default
             //  requestManager = Alamofire.SessionManager(configuration: cfg)
         
            let request =  URLRequestConvertibleAdapter(request: route)
-           return  AlamoRequest(request:   requestManager.request(request).response(completionHandler: { (response) in
+           return  AlamoRequest(request:   Alamofire.request(request).response(completionHandler: { (response) in
                
                 
                 guard let data = response.data else {

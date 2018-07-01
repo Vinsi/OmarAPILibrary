@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class UpdateLocationRequestDataModel: Codable {
+@objc public class UpdateLocationRequestDataModel:NSObject, Codable {
     var  zoneid            : String?
     var  action            : Int?
     var  addressid         : String?
@@ -28,7 +28,7 @@ class UpdateLocationRequestDataModel: Codable {
     }
 }
 
-class ChangeDefaultLocationRequestDataModel:Codable{
+@objc public class ChangeDefaultLocationRequestDataModel:NSObject,Codable{
     
     var addressid:String?
 }

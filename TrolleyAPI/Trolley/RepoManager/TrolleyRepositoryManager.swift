@@ -7,12 +7,12 @@
 //
 
 import Foundation
-protocol IRepositoryManager {
+@objc public protocol IRepositoryManager {
     var sessionConfigObject:ITrolleyAppSession? {get set}
      func accessPoint( )->ITrolleyRepository?
     
 }
-class TrolleyRepositoryManager:IRepositoryManager{
+ @objc public class  TrolleyRepositoryManager:NSObject,IRepositoryManager{
    
     
     public var sessionConfigObject: ITrolleyAppSession? = nil
@@ -25,7 +25,7 @@ class TrolleyRepositoryManager:IRepositoryManager{
         let obj = TrolleyAPIRemoteRepository(appSession: sessionConfigObject, environment: env)
         self.remoteTrolleyRepoObject = obj
     }
-     func accessPoint() -> ITrolleyRepository? {
+    public func accessPoint() -> ITrolleyRepository? {
         
         return self.remoteTrolleyRepoObject
         

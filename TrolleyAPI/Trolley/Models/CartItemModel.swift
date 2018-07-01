@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class CartItemModel:Codable{
+@objc public class CartItemModel:NSObject,Codable{
     
    
         var productId: String?
@@ -20,7 +20,7 @@ class CartItemModel:Codable{
     
     
 }
-class CartItemDataRequestModel:Codable{
+@objc public class CartItemDataRequestModel:NSObject,Codable{
     
     var itemsOrdered:[CartItemModel]?
     

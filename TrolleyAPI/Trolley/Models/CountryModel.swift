@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CountryModel: Codable {
+@objc public class CountryModel:NSObject, Codable {
     var countryId: String!
     var name: String!
     var isoCode2: String!

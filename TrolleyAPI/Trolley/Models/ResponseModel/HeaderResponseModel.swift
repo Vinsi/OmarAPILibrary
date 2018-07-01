@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class HeaderResponseModel: Codable {
+@objc public class HeaderResponseModel:NSObject, Codable {
     var info : String?
     var ver  : String?
     var reqID: String?

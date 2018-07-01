@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class OrderGetDataModel: Codable {
+@objc public class OrderGetDataModel:NSObject, Codable {
 
         var orderId: String!
         var invoiceNo: String!

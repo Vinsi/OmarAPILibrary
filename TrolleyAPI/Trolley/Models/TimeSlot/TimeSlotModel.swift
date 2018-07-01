@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class TimeSlotRequestDataModel:Codable{
+@objc public class TimeSlotRequestDataModel:NSObject,Codable{
     
     var zonecode:String?
     

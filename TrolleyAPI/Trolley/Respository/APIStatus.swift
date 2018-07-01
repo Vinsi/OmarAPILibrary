@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class APIStatus:Status{
+@objc public class APIStatus:Status{
     var rawdata:String?
     var header:HeaderResponseModel!
     private var endPointStatus:Status!

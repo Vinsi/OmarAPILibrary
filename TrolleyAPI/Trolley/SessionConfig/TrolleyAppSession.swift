@@ -8,26 +8,30 @@
 //
 
 import Foundation
-class TrolleyAppSession :ITrolleyAppSession{
-    var token: String
+@objc public class TrolleyAppSession :NSObject,ITrolleyAppSession{
+    public var deviceTime: Date
     
-    var language: String
+    public var token: String
     
-    var logid: Int
+    public var language: String
     
-    var appVersion: String
+    public var logid: Int
     
-    var os: String
-     init(){
+    public var appVersion: String
+    
+    public var os: String
+    public override init(){
         
-       
+        
+        self.deviceTime = Date()
         self.token = " "
         self.language = "en"
         self.logid = 1
         self.appVersion = "test"
         self.os   = "ios"
+         super.init()
     }
-    func haveAccessToken() -> Bool {
+    public func haveAccessToken() -> Bool {
         return self.token != " "
     }
     

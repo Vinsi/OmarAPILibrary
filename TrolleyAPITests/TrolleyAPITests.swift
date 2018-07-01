@@ -60,7 +60,6 @@ class TrolleyAPITests: XCTestCase {
         auth.login    =  "leo.winc@gmail.com"
         auth.password =  MD5("12")
         manager.accessPoint()?.auth(param: auth ){ (status, response) in
-
             if(status.hasError()){
 
                 print("failed"+status.statusMessage)

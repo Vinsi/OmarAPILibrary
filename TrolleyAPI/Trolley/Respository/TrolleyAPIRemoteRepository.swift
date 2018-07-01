@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@objc class TrolleyAPIRemoteRepository :NSObject ,ITrolleyRepository
+@objc public  class TrolleyAPIRemoteRepository :NSObject ,ITrolleyRepository
 {
 
     
@@ -26,7 +26,7 @@ import Foundation
     }
 
     // Catgory Fetch
-    func getAllCategories(callback: @escaping (APIStatus, [CategoryResponseDataModel]?) -> Void) -> IRequest {
+    public func getAllCategories(callback: @escaping (APIStatus, [CategoryResponseDataModel]?) -> Void) -> IRequest {
         
         
         let obj    = CategoryRequestModel()
@@ -45,7 +45,7 @@ import Foundation
         
     }
     
-    func getItems(param:ProductsInCategoryRequestDataModel ,callback: @escaping (APIStatus, ProductsInCategoryResponseDataModel?) -> Void)->IRequest {
+    public func getItems(param:ProductsInCategoryRequestDataModel ,callback: @escaping (APIStatus, ProductsInCategoryResponseDataModel?) -> Void)->IRequest {
         
         let obj    = TrolleyRequestModel<ProductsInCategoryRequestDataModel>()
         obj.data   =  param
@@ -65,7 +65,7 @@ import Foundation
     
     // User
     
-    func auth(param: AuthRequestDataModel, callback: @escaping (APIStatus, AuthResponseDataModel?) -> Void)->IRequest {
+    public func auth(param: AuthRequestDataModel, callback: @escaping (APIStatus, AuthResponseDataModel?) -> Void)->IRequest {
         
         
         let obj    = TrolleyRequestModel<AuthRequestDataModel>()
@@ -84,7 +84,7 @@ import Foundation
         
         
     }
-    func userInfo( callback: @escaping (APIStatus, UserInfoResponseDataModel?) -> Void)->IRequest {
+    public func userInfo( callback: @escaping (APIStatus, UserInfoResponseDataModel?) -> Void)->IRequest {
         
         
         let obj    = UserInfoRequestModel()
@@ -102,7 +102,7 @@ import Foundation
         
         
     }
-    func userForgotPassword(param:ForgotPasswordDataRequestModel,callback: @escaping (APIStatus) -> Void)->IRequest {
+    public func userForgotPassword(param:ForgotPasswordDataRequestModel,callback: @escaping (APIStatus) -> Void)->IRequest {
         
         
         let obj    = TrolleyRequestModel<ForgotPasswordDataRequestModel>()
@@ -122,7 +122,7 @@ import Foundation
         
     }
     
-    func userSaveCart(param:CartItemDataRequestModel,callback: @escaping (APIStatus) -> Void)->IRequest {
+    public func userSaveCart(param:CartItemDataRequestModel,callback: @escaping (APIStatus) -> Void)->IRequest {
     
     
     let obj    = TrolleyRequestModel<CartItemDataRequestModel>()
@@ -142,7 +142,7 @@ import Foundation
     
     }
     
-    func userResetPassword(param:PaswordResetDataRequestModel,callback: @escaping (APIStatus) -> Void)->IRequest {
+    public func userResetPassword(param:PaswordResetDataRequestModel,callback: @escaping (APIStatus) -> Void)->IRequest {
     
     
     let obj    = TrolleyRequestModel<PaswordResetDataRequestModel>()
@@ -159,7 +159,7 @@ import Foundation
     return request
     }
     
-    func userOrderedProducts(callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest {
+    public func userOrderedProducts(callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest {
         let obj = HistoryProductRequestModel();
         obj.header =  getRequestHeader(session: self.sessionObject!)
         let request = self.httpEngine.performRequest(route: APIRouters.User.orderedProduct(request: obj),
@@ -177,7 +177,7 @@ import Foundation
         
     }
     
-    func userInfoUpdate( param: UserInfoUpdateRequestDataModel, callback: @escaping (APIStatus) -> Void) -> IRequest {
+    public func userInfoUpdate( param: UserInfoUpdateRequestDataModel, callback: @escaping (APIStatus) -> Void) -> IRequest {
         let obj    = TrolleyRequestModel<UserInfoUpdateRequestDataModel>()
     
         obj.header = getRequestHeader(session: self.sessionObject!)
@@ -194,7 +194,7 @@ import Foundation
         return request
     }
     
-    func userAdd(param: UserNewAddModel, callback: @escaping (APIStatus) -> Void) -> IRequest {
+    public func userAdd(param: UserNewAddModel, callback: @escaping (APIStatus) -> Void) -> IRequest {
         
         let obj    = TrolleyRequestModel<UserNewAddModel>()
         
@@ -208,7 +208,7 @@ import Foundation
         return request
     }
     
-    func reward(callback: @escaping (APIStatus,[RewardModel]?) -> Void)->IRequest {
+    public func reward(callback: @escaping (APIStatus,[RewardModel]?) -> Void)->IRequest {
         let obj    =  RewardsRequestModel()
         
         obj.header =  getRequestHeader(session: self.sessionObject!)
@@ -233,7 +233,7 @@ import Foundation
     
    
     // Mark Cards
-    func savedCards( callback: @escaping (APIStatus, Array<CardModel>?) -> Void)->IRequest {
+    public func savedCards( callback: @escaping (APIStatus, Array<CardModel>?) -> Void)->IRequest {
         
         
         let obj    = TrolleyRequestModel<Array<String>>()
@@ -255,7 +255,7 @@ import Foundation
 
    // Location
    
-    func locationAdd(param:NewLocationRequestDataModel ,callback: @escaping (APIStatus) -> Void)->IRequest {
+    public func locationAdd(param:NewLocationRequestDataModel ,callback: @escaping (APIStatus) -> Void)->IRequest {
         
         let obj    =  TrolleyRequestModel<NewLocationRequestDataModel>()
         obj.data   =  param
@@ -273,7 +273,7 @@ import Foundation
         
     }
     
-    func locationChangeDefault(param:ChangeDefaultLocationRequestDataModel ,callback: @escaping (APIStatus) -> Void)->IRequest {
+    public func locationChangeDefault(param:ChangeDefaultLocationRequestDataModel ,callback: @escaping (APIStatus) -> Void)->IRequest {
         
         let obj    =  TrolleyRequestModel<ChangeDefaultLocationRequestDataModel>()
         obj.data   =  param
@@ -291,7 +291,7 @@ import Foundation
         
     }
     
-    func locationUpdate(param:UpdateLocationRequestDataModel ,callback: @escaping (APIStatus) -> Void)->IRequest {
+    public func locationUpdate(param:UpdateLocationRequestDataModel ,callback: @escaping (APIStatus) -> Void)->IRequest {
         
         let obj    =  TrolleyRequestModel<UpdateLocationRequestDataModel>()
         obj.data   =  param
@@ -309,7 +309,7 @@ import Foundation
         
     }
     
-    func locationGetCountry(callback: @escaping (APIStatus,Array<CountryModel>?) -> Void)->IRequest {
+    public func locationGetCountry(callback: @escaping (APIStatus,Array<CountryModel>?) -> Void)->IRequest {
         
         let obj    =  TrolleyRequestModel<CountryRequestModel>()
         
@@ -327,7 +327,7 @@ import Foundation
         
     }
     
-    func locationGetZone(param:ZoneRequestDataModel ,callback: @escaping (APIStatus,Array<ZoneModel>?) -> Void)->IRequest {
+    public func locationGetZone(param:ZoneRequestDataModel ,callback: @escaping (APIStatus,Array<ZoneModel>?) -> Void)->IRequest {
         
         let obj    =  TrolleyRequestModel<ZoneRequestDataModel>()
         obj.data   =  param
@@ -347,7 +347,7 @@ import Foundation
     
     //Time slot
     
-    func timeSlot(param:TimeSlotRequestDataModel,callback: @escaping (APIStatus,TimeSlotResponseDataModel?) -> Void)->IRequest {
+    public func timeSlot(param:TimeSlotRequestDataModel,callback: @escaping (APIStatus,[TimeSlotModel]?) -> Void)->IRequest {
         let obj    =  TrolleyRequestModel<TimeSlotRequestDataModel>()
         obj.data   =  param
         obj.header =  getRequestHeader(session: self.sessionObject!)
@@ -367,7 +367,7 @@ import Foundation
     }
     
     // Order
-    func orderAdd( param: OrderRequestDataModel, callback: @escaping (APIStatus, OrderResponseDataModel?) -> Void) -> IRequest {
+    public func orderAdd( param: OrderRequestDataModel, callback: @escaping (APIStatus, OrderResponseDataModel?) -> Void) -> IRequest {
         
         let obj    = TrolleyRequestModel<OrderRequestDataModel>()
         
@@ -386,7 +386,7 @@ import Foundation
     }
     
     
-    func ordersGet(callback: @escaping (APIStatus,[OrderGetDataModel]?) -> Void)->IRequest {
+    public func ordersGet(callback: @escaping (APIStatus,[OrderGetDataModel]?) -> Void)->IRequest {
         let obj    =    OrderGetRequestModel()
         
         obj.header =  getRequestHeader(session: self.sessionObject!)
@@ -405,7 +405,7 @@ import Foundation
         
     }
     
-    func ordersGetDetails(param:OrderDetailsRequestDataModel , callback: @escaping (APIStatus,[OrderDetailsResponseDataModel]?) -> Void)->IRequest {
+    public func ordersGetDetails(param:OrderDetailsRequestDataModel , callback: @escaping (APIStatus,[OrderDetailsResponseDataModel]?) -> Void)->IRequest {
         let obj    =    TrolleyRequestModel<OrderDetailsRequestDataModel>()
         obj.data   =   param
         obj.header =  getRequestHeader(session: self.sessionObject!)
@@ -421,7 +421,7 @@ import Foundation
     }
     // Mark search
     
-    func searchFor(param:SearchNameDataRequestModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest {
+    public func searchForName(param:SearchNameDataRequestModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest {
     let obj    =    TrolleyRequestModel<SearchNameDataRequestModel>()
     obj.data   =   param
     obj.header =  getRequestHeader(session: self.sessionObject!)
@@ -433,7 +433,7 @@ import Foundation
     return request
     }
     
-    func searchFor(param:SearchSkuRequestDataModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest {
+    public func searchForSku(param:SearchSkuRequestDataModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest {
         let obj    =    TrolleyRequestModel<SearchSkuRequestDataModel>()
         obj.data   =   param
         obj.header =  getRequestHeader(session: self.sessionObject!)

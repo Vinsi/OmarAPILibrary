@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class AuthResponseDataModel: Codable {
+@objc public class AuthResponseDataModel: NSObject,Codable {
     var accesstoken: String? = nil
     var accesstokenExpiry: String? = nil
     var customerId: String? = nil
@@ -17,7 +17,7 @@ class AuthResponseDataModel: Codable {
         case customerId = "customer_id"
     }
 }
-class AuthRequestDataModel: Codable {
+@objc public class AuthRequestDataModel:NSObject, Codable {
     var login: String?
     var password: String?
 }

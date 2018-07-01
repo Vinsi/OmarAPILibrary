@@ -7,13 +7,13 @@
 //
 
 import Foundation
-class OrderDetailsRequestDataModel: Codable {
+@objc public class OrderDetailsRequestDataModel:NSObject, Codable {
     var orderId: String? = nil
     private enum CodingKeys: String, CodingKey {
         case orderId = "order_id"
     }
 }
-class OrderDetailsResponseDataModel: Codable {
+@objc public class OrderDetailsResponseDataModel: NSObject,Codable {
 
         class Item: Codable {
             var orderProductId: String!

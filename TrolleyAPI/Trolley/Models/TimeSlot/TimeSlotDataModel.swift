@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class TimeSlotModel: Codable {
+@objc public class TimeSlotModel: NSObject,Codable {
     var timeslotDesc: String? = nil
     var timeslotPrice: String? = nil
     var timeslotCapacity: String? = nil

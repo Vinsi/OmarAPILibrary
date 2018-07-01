@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UserNewAddModel: Codable {
+@objc public class UserNewAddModel: NSObject,Codable {
     var telephone: String?
     var zoneid: String?
     var nationality: String?

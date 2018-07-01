@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class SearchSkuRequestDataModel:Codable{
+@objc public class SearchSkuRequestDataModel:NSObject,Codable{
     
     var code: String? = nil
     private enum CodingKeys: String, CodingKey {

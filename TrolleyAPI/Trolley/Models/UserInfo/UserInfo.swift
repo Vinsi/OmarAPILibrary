@@ -8,8 +8,8 @@
 
 import Foundation
 
-class UserInfoResponseDataModel: Codable {
-    class ShippingAddresse: Codable {
+@objc public class UserInfoResponseDataModel:NSObject, Codable {
+    @objc public class ShippingAddresse: NSObject,Codable {
         var firstname: String?
         var lastname: String?
         var addressId: String?
@@ -38,7 +38,7 @@ class UserInfoResponseDataModel: Codable {
         }
     }
     var shippingAddresses: [ShippingAddresse]?
-    class Userinfo: Codable {
+    @objc public class Userinfo: NSObject,Codable {
         var customerId: String?
         var storeId: String?
         var firstname: String?

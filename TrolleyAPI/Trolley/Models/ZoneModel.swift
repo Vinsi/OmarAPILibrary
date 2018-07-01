@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class ZoneModel: Codable {
+@objc public class ZoneModel: NSObject,Codable {
     var zoneId: String!
     var countryId: String!
     var code: String!
@@ -26,7 +26,7 @@ class ZoneModel: Codable {
     }
 }
 
-class ZoneRequestDataModel:Codable{
+@objc public class ZoneRequestDataModel:NSObject,Codable{
     
     var countryId:String?
     private enum CodingKeys: String, CodingKey {

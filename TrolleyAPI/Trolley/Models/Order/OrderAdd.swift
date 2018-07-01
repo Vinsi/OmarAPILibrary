@@ -8,14 +8,14 @@
 
 import Foundation
 
-class OrderRequestDataModel: Codable {
+@objc public class OrderRequestDataModel:NSObject, Codable {
     var orderRewardClaimed: Int? = nil
     var lastname: String?
     var couponcode: String? = nil
     var shippingApartmentno: String?
     var shippingZonecode: String?
     var shippingZoneid: String?
-    class OrderItem: Codable {
+    @objc public class OrderItem: NSObject, Codable {
         var productId: String?
         var quantity: Int?
         var categoryId: String?
@@ -123,7 +123,7 @@ class OrderRequestDataModel: Codable {
     }
 }
 
-class OrderResponseDataModel: Codable {
+@objc public class OrderResponseDataModel: NSObject,Codable {
     var orderId: String?
     var deliveryDate: String?
     var timeslotDesc: String?

@@ -7,7 +7,7 @@
 //
 
 import Foundation
- protocol ITrolleyRepository {
+  @objc public  protocol ITrolleyRepository {
     
      //Mark Category Repositories
     @discardableResult
@@ -57,7 +57,7 @@ import Foundation
     
     //Mark Timeslot Repositories
       @discardableResult
-    func timeSlot(param:TimeSlotRequestDataModel,callback: @escaping (APIStatus,TimeSlotResponseDataModel?) -> Void)->IRequest
+    func timeSlot(param:TimeSlotRequestDataModel,callback: @escaping (APIStatus, [TimeSlotModel]?) -> Void)->IRequest
     
     //Mark Order Repositories
       @discardableResult
@@ -69,9 +69,9 @@ import Foundation
     
     //Mark Search Repositories
       @discardableResult
-    func searchFor(param:SearchNameDataRequestModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest
+    func searchForName(param:SearchNameDataRequestModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest
       @discardableResult
-    func searchFor(param:SearchSkuRequestDataModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest
+    func searchForSku(param:SearchSkuRequestDataModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest
     
 }
 

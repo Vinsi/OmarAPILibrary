@@ -7,7 +7,7 @@
 //
 
 import Foundation
-protocol ITrolleyAppSession{
+@objc public protocol ITrolleyAppSession{
     var  token:String   {get}
     var  language:String {get}
     var  deviceTime:Date  {get}
@@ -17,12 +17,4 @@ protocol ITrolleyAppSession{
     func haveAccessToken()->Bool
 }
 
-extension ITrolleyAppSession {
-    
-    var  deviceTime:Date  {
-        
-        return Date()
-        
-    }
-    
-}
+

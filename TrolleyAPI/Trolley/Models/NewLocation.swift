@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class NewLocationRequestDataModel: Codable {
+@objc public class NewLocationRequestDataModel: NSObject,Codable {
 
     var zoneid             : String? = nil
     var apartmentNumber    : String? = nil

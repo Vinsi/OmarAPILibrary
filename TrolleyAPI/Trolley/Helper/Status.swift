@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Status {
+@objc public class Status :NSObject {
     
     var statusMessage:String = ""
     var statusCode:Int = 0

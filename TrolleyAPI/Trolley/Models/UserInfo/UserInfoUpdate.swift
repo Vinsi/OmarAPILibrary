@@ -13,7 +13,7 @@ class UserInfoUpdateResponseDataModel: Codable {
         
     }
 }
-class UserInfoUpdateRequestDataModel: Codable {
+@objc public class UserInfoUpdateRequestDataModel: NSObject,Codable {
     var telephone: String?
     var firstname: String?
     var lastname: String?

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class ItemSearchModel: Codable {
+@objc public class ItemSearchModel: NSObject,Codable {
     var productId: String!
     var languageId: String!
     var name: String!

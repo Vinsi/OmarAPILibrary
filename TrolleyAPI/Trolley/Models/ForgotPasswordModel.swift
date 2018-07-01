@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class ForgotPasswordDataRequestModel:Codable{
+@objc public class ForgotPasswordDataRequestModel:NSObject,Codable{
     
     var email:String?
     

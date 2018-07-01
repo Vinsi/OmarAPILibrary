@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class PaswordResetDataRequestModel:Codable{
+@objc public class PaswordResetDataRequestModel:NSObject,Codable{
     
     var password:String?
     

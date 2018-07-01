@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class CategoryResponseDataModel: Codable {
+@objc public class CategoryResponseDataModel: NSObject,Codable {
 
         var image: String!
         var categoryId: String!

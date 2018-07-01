@@ -10,7 +10,7 @@ import Foundation
 
 
 typealias IHTTPNetworkResponse = ( _ response :String,_ error:Error)->Void
-protocol IRequest{
+@objc public protocol IRequest{
      func cancel()
     
 }

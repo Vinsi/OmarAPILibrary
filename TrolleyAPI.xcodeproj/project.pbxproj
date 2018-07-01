@@ -63,7 +63,7 @@
 		A9D429B020710CCC000C5CA6 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429AF20710CCC000C5CA6 /* ItemModel.swift */; };
 		A9D429B2207110C9000C5CA6 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429B1207110C9000C5CA6 /* CountryModel.swift */; };
 		A9D429B420711119000C5CA6 /* ZoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429B320711119000C5CA6 /* ZoneModel.swift */; };
-		A9D429B6207111B2000C5CA6 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429B5207111B2000C5CA6 /* CardModel.swift */; };
+		A9D429B6207111B2000C5CA6 /* SavedCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429B5207111B2000C5CA6 /* SavedCardModel.swift */; };
 		A9D429B820711228000C5CA6 /* RewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429B720711228000C5CA6 /* RewardModel.swift */; };
 		A9D429BB20711312000C5CA6 /* ProductInSubcat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429BA20711312000C5CA6 /* ProductInSubcat.swift */; };
 		A9D429BD2071150A000C5CA6 /* NewLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429BC2071150A000C5CA6 /* NewLocation.swift */; };
@@ -141,7 +141,7 @@
 		A9D429AF20710CCC000C5CA6 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		A9D429B1207110C9000C5CA6 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		A9D429B320711119000C5CA6 /* ZoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoneModel.swift; sourceTree = "<group>"; };
-		A9D429B5207111B2000C5CA6 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		A9D429B5207111B2000C5CA6 /* SavedCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCardModel.swift; sourceTree = "<group>"; };
 		A9D429B720711228000C5CA6 /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardModel.swift; sourceTree = "<group>"; };
 		A9D429BA20711312000C5CA6 /* ProductInSubcat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInSubcat.swift; sourceTree = "<group>"; };
 		A9D429BC2071150A000C5CA6 /* NewLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocation.swift; sourceTree = "<group>"; };
@@ -214,7 +214,7 @@
 				A9D429AF20710CCC000C5CA6 /* ItemModel.swift */,
 				A9D429B320711119000C5CA6 /* ZoneModel.swift */,
 				A9D429B1207110C9000C5CA6 /* CountryModel.swift */,
-				A9D429B5207111B2000C5CA6 /* CardModel.swift */,
+				A9D429B5207111B2000C5CA6 /* SavedCardModel.swift */,
 				A9D429B720711228000C5CA6 /* RewardModel.swift */,
 				A9D429BC2071150A000C5CA6 /* NewLocation.swift */,
 				A99162A420DFC0B100691962 /* UpdateLocation.swift */,
@@ -676,7 +676,7 @@
 				A9D429B420711119000C5CA6 /* ZoneModel.swift in Sources */,
 				A9D429AE20710B64000C5CA6 /* OrderDataModel.swift in Sources */,
 				A9D429BB20711312000C5CA6 /* ProductInSubcat.swift in Sources */,
-				A9D429B6207111B2000C5CA6 /* CardModel.swift in Sources */,
+				A9D429B6207111B2000C5CA6 /* SavedCardModel.swift in Sources */,
 				A99162A320DFBD6A00691962 /* CouponModel.swift in Sources */,
 				A991627420DF883800691962 /* NetworkEnvironment.swift in Sources */,
 				A991629620DFA54500691962 /* TimeSlotModel.swift in Sources */,

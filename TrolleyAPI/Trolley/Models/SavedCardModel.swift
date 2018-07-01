@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@objc public class CardModel: NSObject, Codable {
+@objc public class SavedCardModel: NSObject, Codable {
    
     public var id           : String?    = nil
     public var cardId       : String?    = nil

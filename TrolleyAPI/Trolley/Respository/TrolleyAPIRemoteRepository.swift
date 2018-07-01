@@ -233,14 +233,14 @@ import Foundation
     
    
     // Mark Cards
-    public func savedCards( callback: @escaping (APIStatus, Array<CardModel>?) -> Void)->IRequest {
+    public func savedCards( callback: @escaping (APIStatus, Array<SavedCardModel>?) -> Void)->IRequest {
         
         
         let obj    = TrolleyRequestModel<Array<String>>()
         obj.data   = nil
         obj.header = getRequestHeader(session: self.sessionObject!)
         let request = self.httpEngine.performRequest(route: APIRouters.Card.get(request: obj),
-                                                     responsetype: TrolleyResponseModel<Array<CardModel>>.self) { (status, obj) in
+                                                     responsetype: TrolleyResponseModel<Array<SavedCardModel>>.self) { (status, obj) in
                                                         
                                                         if status.hasError() == false {
                                                             status.setEndPointStatus(status: Status.CreateStatus(statusCode: (obj?.error)!, statusMessage: (obj?.statusmessage)!))

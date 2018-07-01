@@ -40,7 +40,7 @@ import Foundation
       @discardableResult
     func reward(callback: @escaping (APIStatus,[RewardModel]?) -> Void)->IRequest
       @discardableResult
-    func savedCards( callback: @escaping (APIStatus, Array<CardModel>?) -> Void)->IRequest
+    func savedCards( callback: @escaping (APIStatus, Array<SavedCardModel>?) -> Void)->IRequest
   
     
     //Mark Locations Repositories

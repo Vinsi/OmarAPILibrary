@@ -20,7 +20,7 @@ import Foundation
     let env:NetworkEnvironment = .production
     
     
-    func createRepo(){
+    public func createRepo(){
         
         let obj = TrolleyAPIRemoteRepository(appSession: sessionConfigObject, environment: env)
         self.remoteTrolleyRepoObject = obj

@@ -24,7 +24,7 @@ func getRequestHeader(session:ITrolleyAppSession)->HeaderRequestModel{
     header.accesstoken = session.token
     header.deviceOs    = session.os
     header.deviceTime  = session.deviceTime
-    header.logid       = session.logid
+    header.logid       = session.logid?.getNewID() ?? 0
     header.appVersion  = session.appVersion
     return header
 }

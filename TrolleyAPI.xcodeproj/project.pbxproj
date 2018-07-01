@@ -22,6 +22,7 @@
 		A94B9F2620E4F8E300D7A53A /* IHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B9F2520E4F8E300D7A53A /* IHTTPRequest.swift */; };
 		A94B9F2820E4FA5F00D7A53A /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B9F2720E4FA5F00D7A53A /* HTTPMethods.swift */; };
 		A94B9F2C20E5159E00D7A53A /* APIStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B9F2B20E5159E00D7A53A /* APIStatus.swift */; };
+		A94B9F7520E9059600D7A53A /* ILog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B9F7420E9059600D7A53A /* ILog.swift */; };
 		A959957E207220CB007B1132 /* AlamoFireNetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A959957D207220CB007B1132 /* AlamoFireNetworkEngine.swift */; };
 		A95995802072243F007B1132 /* TrolleyAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A959957F2072243F007B1132 /* TrolleyAPIRouter.swift */; };
 		A98D17E820749E7E00543BE8 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98D17E720749E7E00543BE8 /* Status.swift */; };
@@ -97,6 +98,7 @@
 		A94B9F2520E4F8E300D7A53A /* IHTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHTTPRequest.swift; sourceTree = "<group>"; };
 		A94B9F2720E4FA5F00D7A53A /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 		A94B9F2B20E5159E00D7A53A /* APIStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStatus.swift; sourceTree = "<group>"; };
+		A94B9F7420E9059600D7A53A /* ILog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILog.swift; sourceTree = "<group>"; };
 		A959957D207220CB007B1132 /* AlamoFireNetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireNetworkEngine.swift; sourceTree = "<group>"; };
 		A959957F2072243F007B1132 /* TrolleyAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrolleyAPIRouter.swift; sourceTree = "<group>"; };
 		A98D17E720749E7E00543BE8 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 			children = (
 				A93B9C7720E3AB610085E9B4 /* ITrolleyAppSession.swift */,
 				A93B9C7920E3AB830085E9B4 /* TrolleyAppSession.swift */,
+				A94B9F7420E9059600D7A53A /* ILog.swift */,
 			);
 			path = SessionConfig;
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 				A93B9C7420E38EDB0085E9B4 /* ItemSearchModel.swift in Sources */,
 				A90540FB20DA7A0B00090472 /* EndPointType.swift in Sources */,
 				A991629020DFA48200691962 /* HeaderResponseModel.swift in Sources */,
+				A94B9F7520E9059600D7A53A /* ILog.swift in Sources */,
 				A9D429B820711228000C5CA6 /* RewardModel.swift in Sources */,
 				A99162A120DFB9A100691962 /* PaswordResetModel.swift in Sources */,
 				A94B9F2620E4F8E300D7A53A /* IHTTPRequest.swift in Sources */,

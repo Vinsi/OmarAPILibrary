@@ -8,14 +8,14 @@
 //
 
 import Foundation
-@objc public class TrolleyAppSession :NSObject,ITrolleyAppSession{
+@objc public class TrolleyAppSession :NSObject,ITrolleyAppSession {
     public var deviceTime: Date
     
     public var token: String
     
     public var language: String
     
-    public var logid: Int
+    public var logid: IIDGenerator? = nil
     
     public var appVersion: String
     
@@ -26,7 +26,7 @@ import Foundation
         self.deviceTime = Date()
         self.token = " "
         self.language = "en"
-        self.logid = 1
+        
         self.appVersion = "test"
         self.os   = "ios"
          super.init()

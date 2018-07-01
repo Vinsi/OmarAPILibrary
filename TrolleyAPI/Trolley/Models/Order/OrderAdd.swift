@@ -27,9 +27,9 @@ import Foundation
     }
     public var orderItems: [OrderItem]?
     public var telephone: String?
-    class Payment:Codable  {
+    @objc public class Payment:NSObject,Codable  {
         
-        enum Paymode:String,Codable{
+       public enum Paymode:String,Codable{
             case cod
             case scod
             case card
@@ -41,7 +41,7 @@ import Foundation
         }
         
         
-        class CardModel: Codable {
+       @objc  public class CardModel:NSObject, Codable {
             public var cardCvv: String?
             public var cardNeed2save: Int?
             public var cardExpiryMonth: String?
@@ -77,8 +77,8 @@ import Foundation
     public var payment: Payment?
     public var shippingZone: String?
 
-    class Deliverytime: Codable {
-        enum DeliveryType :String,Codable  {
+   @objc public class Deliverytime: NSObject,Codable {
+        public enum DeliveryType :String,Codable  {
             
             case normal
             case scheduled
@@ -87,7 +87,7 @@ import Foundation
             }
             
         
-        class Slotdata: Codable {
+        @objc public class Slotdata:NSObject, Codable {
             public var slotid: String?
             public var slotdate: String?
         }

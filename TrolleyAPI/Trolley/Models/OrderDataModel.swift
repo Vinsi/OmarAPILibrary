@@ -15,7 +15,7 @@ import Foundation
 }
 @objc public class OrderDetailsResponseDataModel: NSObject,Codable {
 
-        class Item: Codable {
+     @objc  public class Item:NSObject, Codable {
           public  var orderProductId: String!
            public var orderId  : String!
            public var productId: String!
@@ -41,8 +41,8 @@ import Foundation
                 case refund
             }
         }
-        public var items: [Item]? = nil
-        class Subitem: Codable {
+      @objc  public var items: [Item]? = nil
+            @objc  public class Subitem: NSObject,Codable {
             public var orderTotalId: String!
             public var orderId: String!
             public var code: String!

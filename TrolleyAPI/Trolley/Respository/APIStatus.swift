@@ -26,7 +26,7 @@ import Foundation
             self.status = self.endPointStatus
         }
     }
-    override var statusCode: Int {
+    override public var statusCode: Int {
         get {
             return self.status.statusCode
         }

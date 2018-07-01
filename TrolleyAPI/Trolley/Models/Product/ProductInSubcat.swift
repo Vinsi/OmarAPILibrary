@@ -14,7 +14,7 @@ import Foundation
     }
 }
 @objc public class ProductsInCategoryResponseDataModel: NSObject,Codable {
-    class Row: Codable {
+    @objc public class Row:NSObject, Codable {
         public var parentId: String!
         public var ischild: String!
         public var categoryname: String!
@@ -75,7 +75,7 @@ import Foundation
         }
     }
     public var rows: [Row]!
-    class Maincategoryinfo: Codable {
+    public class Maincategoryinfo: NSObject,Codable {
         public var categoryId: String!
         public var image: String!
         public var parentId: String!
@@ -89,7 +89,7 @@ import Foundation
         public var color: String!
         public var languageId: String!
         public var name: String!
-        public var description: String!
+        public var productdescription: String!
         public var metaDescription: String!
         public var metaKeyword: String!
         public var bannerId: String!
@@ -111,7 +111,7 @@ import Foundation
             case color
             case languageId = "language_id"
             case name
-            case description
+            case productdescription = "description"
             case metaDescription = "meta_description"
             case metaKeyword = "meta_keyword"
             case bannerId = "banner_id"

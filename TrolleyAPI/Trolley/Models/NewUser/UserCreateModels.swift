@@ -9,22 +9,22 @@
 import Foundation
 
 @objc public class UserNewAddModel: NSObject,Codable {
-    var telephone: String?
-    var zoneid: String?
-    var nationality: String?
-    var lastname: String?
-    var dob: String?
-    var religion: String?
-    var firstname: String?
-    var instruction: String?
-    var password: String?
-    var apartment: String?
-    var devicetoken: String?
-    var phonecode: String?
-    var areaid: String?
-    var email: String?
-    var gender: String?
-    var salutation: String?
+    public var telephone: String?
+    public var zoneid: String?
+    public var nationality: String?
+    public var lastname: String?
+    public var dob: String?
+    public var religion: String?
+    public var firstname: String?
+    public var instruction: String?
+    public var password: String?
+    public var apartment: String?
+    public var devicetoken: String?
+    public var phonecode: String?
+    public var areaid: String?
+    public var email: String?
+    public var gender: String?
+    public var salutation: String?
 }
 
 

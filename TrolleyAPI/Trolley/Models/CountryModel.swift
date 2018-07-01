@@ -9,16 +9,16 @@
 import Foundation
 
 @objc public class CountryModel:NSObject, Codable {
-    var countryId: String!
-    var name: String!
-    var isoCode2: String!
-    var isoCode3: String!
-    var addressFormat: String!
-    var postcodeRequired: String!
-    var status: String!
-    var countryCapacity: String!
-    var zoneCode: String!
-    var outside: String!
+    public var countryId: String!
+    public var name: String!
+    public var isoCode2: String!
+    public var isoCode3: String!
+    public var addressFormat: String!
+    public var postcodeRequired: String!
+    public var status: String!
+    public var countryCapacity: String!
+    public var zoneCode: String!
+    public var outside: String!
     private enum CodingKeys: String, CodingKey {
         case countryId = "country_id"
         case name

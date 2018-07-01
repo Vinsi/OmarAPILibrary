@@ -9,19 +9,19 @@
 import Foundation
 @objc public class NewLocationRequestDataModel: NSObject,Codable {
 
-    var zoneid             : String? = nil
-    var apartmentNumber    : String? = nil
-    var lastname           : String? = nil
-    var city               : String? = nil
-    var address1           : String? = nil
-    var specialInstruction : String? = nil
-    var buildingNumber     : String? = nil
-    var customerId         : String? = nil
-    var firstname          : String? = nil
-    var company            : String? = nil
-    var address2           : String? = nil
-    var postcode           : String? = nil
-    var countryId          : String? = nil
+    public var zoneid             : String? = nil
+    public var apartmentNumber    : String? = nil
+    public var lastname           : String? = nil
+    public var city               : String? = nil
+    public var address1           : String? = nil
+    public var specialInstruction : String? = nil
+    public var buildingNumber     : String? = nil
+    public var customerId         : String? = nil
+    public var firstname          : String? = nil
+    public var company            : String? = nil
+    public var address2           : String? = nil
+    public var postcode           : String? = nil
+    public var countryId          : String? = nil
     private enum CodingKeys: String, CodingKey {
         case zoneid
         case apartmentNumber    = "apartment_number"

@@ -9,24 +9,24 @@
 import Foundation
 
 @objc public class OrderRequestDataModel:NSObject, Codable {
-    var orderRewardClaimed: Int? = nil
-    var lastname: String?
-    var couponcode: String? = nil
-    var shippingApartmentno: String?
-    var shippingZonecode: String?
-    var shippingZoneid: String?
+    public var orderRewardClaimed: Int? = nil
+    public var lastname: String?
+    public var couponcode: String? = nil
+    public var shippingApartmentno: String?
+    public var shippingZonecode: String?
+    public var shippingZoneid: String?
     @objc public class OrderItem: NSObject, Codable {
-        var productId: String?
-        var quantity: Int?
-        var categoryId: String?
+        public var productId: String?
+        public var quantity: Int?
+        public var categoryId: String?
         private enum CodingKeys: String, CodingKey {
             case productId = "product_id"
             case quantity
             case categoryId = "category_id"
         }
     }
-    var orderItems: [OrderItem]?
-    var telephone: String?
+    public var orderItems: [OrderItem]?
+    public var telephone: String?
     class Payment:Codable  {
         
         enum Paymode:String,Codable{
@@ -42,12 +42,12 @@ import Foundation
         
         
         class CardModel: Codable {
-            var cardCvv: String?
-            var cardNeed2save: Int?
-            var cardExpiryMonth: String?
-            var cardExpiryYear: String?
-            var cardToken: String?
-            var gateway: String?
+            public var cardCvv: String?
+            public var cardNeed2save: Int?
+            public var cardExpiryMonth: String?
+            public var cardExpiryYear: String?
+            public var cardToken: String?
+            public var gateway: String?
             private enum CodingKeys: String, CodingKey {
                 case cardCvv = "card_cvv"
                 case cardNeed2save = "card_need2save"
@@ -57,9 +57,9 @@ import Foundation
                 case gateway
             }
         }
-        var type: Paymode?
+        public var type: Paymode?
         
-        var value: CardModel? 
+        public var value: CardModel? 
         public enum CodingKeys: String, CodingKey {
             case type
             case value
@@ -74,8 +74,8 @@ import Foundation
     }
     
   
-    var payment: Payment?
-    var shippingZone: String?
+    public var payment: Payment?
+    public var shippingZone: String?
 
     class Deliverytime: Codable {
         enum DeliveryType :String,Codable  {
@@ -88,19 +88,19 @@ import Foundation
             
         
         class Slotdata: Codable {
-            var slotid: String?
-            var slotdate: String?
+            public var slotid: String?
+            public var slotdate: String?
         }
-        var slotdata: Slotdata?
-        var type: DeliveryType?
+        public var slotdata: Slotdata?
+        public var type: DeliveryType?
     }
-    var deliverytime: Deliverytime?
-    var firstname: String?
-    var shippingCountryid: String?
-    var email: String?
-    var orderSubtotal: Int?
-    var orderFinaltotal: Int?
-    var shippingCountry: String?
+    public var deliverytime: Deliverytime?
+    public var firstname: String?
+    public var shippingCountryid: String?
+    public var email: String?
+    public var orderSubtotal: Int?
+    public var orderFinaltotal: Int?
+    public var shippingCountry: String?
     private enum CodingKeys: String, CodingKey {
         case orderRewardClaimed = "order_reward_claimed"
         case lastname
@@ -124,10 +124,10 @@ import Foundation
 }
 
 @objc public class OrderResponseDataModel: NSObject,Codable {
-    var orderId: String?
-    var deliveryDate: String?
-    var timeslotDesc: String?
-    var total: Float?
+    public var orderId: String?
+    public var deliveryDate: String?
+    public var timeslotDesc: String?
+    public var total: Float?
     private enum CodingKeys: String, CodingKey {
         case orderId = "order_id"
         case deliveryDate = "delivery_date"

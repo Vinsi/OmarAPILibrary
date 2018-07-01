@@ -8,13 +8,13 @@
 
 import Foundation
 @objc public class ZoneModel: NSObject,Codable {
-    var zoneId: String!
-    var countryId: String!
-    var code: String!
-    var name: String!
-    var status: String!
-    var corLat: Float!
-    var corLon: Float!
+    public var zoneId: String!
+    public var countryId: String!
+    public var code: String!
+    public var name: String!
+    public var status: String!
+    public var corLat: Float!
+    public var corLon: Float!
     private enum CodingKeys: String, CodingKey {
         case zoneId = "zone_id"
         case countryId = "country_id"
@@ -28,7 +28,7 @@ import Foundation
 
 @objc public class ZoneRequestDataModel:NSObject,Codable{
     
-    var countryId:String?
+    public var countryId:String?
     private enum CodingKeys: String, CodingKey {
     
         case countryId = "country_id"

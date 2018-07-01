@@ -8,14 +8,14 @@
 
 import Foundation
 @objc public class UpdateLocationRequestDataModel:NSObject, Codable {
-    var  zoneid            : String?
-    var  action            : Int?
-    var  addressid         : String?
-    var  addressId         : String?
-    var  address2          : String?
-    var  countryId         : String?
-    var  customerId        : String?
-    var  apartmentNumber   : String?
+    public var  zoneid            : String?
+    public var  action            : Int?
+    public var  addressid         : String?
+    public var  addressId         : String?
+    public var  address2          : String?
+    public var  countryId         : String?
+    public var  customerId        : String?
+    public var  apartmentNumber   : String?
     private enum CodingKeys: String, CodingKey {
         case zoneid
         case action
@@ -30,5 +30,5 @@ import Foundation
 
 @objc public class ChangeDefaultLocationRequestDataModel:NSObject,Codable{
     
-    var addressid:String?
+    public var addressid:String?
 }

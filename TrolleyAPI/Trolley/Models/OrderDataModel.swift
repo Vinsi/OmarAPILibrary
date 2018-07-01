@@ -8,7 +8,7 @@
 
 import Foundation
 @objc public class OrderDetailsRequestDataModel:NSObject, Codable {
-    var orderId: String? = nil
+    public var orderId: String? = nil
     private enum CodingKeys: String, CodingKey {
         case orderId = "order_id"
     }
@@ -16,17 +16,17 @@ import Foundation
 @objc public class OrderDetailsResponseDataModel: NSObject,Codable {
 
         class Item: Codable {
-            var orderProductId: String!
-            var orderId  : String!
-            var productId: String!
-            var name: String!
-            var model: String!
-            var quantity: String!
-            var price: String!
-            var total: String!
-            var tax: String!
-            var edit: String!
-            var refund: String!
+          public  var orderProductId: String!
+           public var orderId  : String!
+           public var productId: String!
+          public  var name: String!
+          public  var model: String!
+          public  var quantity: String!
+          public  var price: String!
+           public var total: String!
+          public  var tax: String!
+          public  var edit: String!
+          public  var refund: String!
             private enum CodingKeys: String, CodingKey {
                 case orderProductId = "order_product_id"
                 case orderId = "order_id"
@@ -41,15 +41,15 @@ import Foundation
                 case refund
             }
         }
-        var items: [Item]? = nil
+        public var items: [Item]? = nil
         class Subitem: Codable {
-            var orderTotalId: String!
-            var orderId: String!
-            var code: String!
-            var title: String!
-            var text: String!
-            var value: String!
-            var sortOrder: String!
+            public var orderTotalId: String!
+            public var orderId: String!
+            public var code: String!
+            public var title: String!
+            public var text: String!
+            public var value: String!
+            public var sortOrder: String!
             private enum CodingKeys: String, CodingKey {
                 case orderTotalId = "order_total_id"
                 case orderId = "order_id"
@@ -60,7 +60,7 @@ import Foundation
                 case sortOrder = "sort_order"
             }
         }
-        var subitems: [Subitem]? = nil
+        public var subitems: [Subitem]? = nil
   
 }
 

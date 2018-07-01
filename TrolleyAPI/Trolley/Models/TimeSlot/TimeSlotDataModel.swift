@@ -8,13 +8,13 @@
 
 import Foundation
 @objc public class TimeSlotModel: NSObject,Codable {
-    var timeslotDesc: String? = nil
-    var timeslotPrice: String? = nil
-    var timeslotCapacity: String? = nil
-    var ordercount: String? = nil
-    var calenderId: String? = nil
-    var date: String? = nil
-    var timeslotId: String? = nil
+    public var timeslotDesc: String? = nil
+    public var timeslotPrice: String? = nil
+    public var timeslotCapacity: String? = nil
+    public var ordercount: String? = nil
+    public var calenderId: String? = nil
+    public var date: String? = nil
+    public var timeslotId: String? = nil
     private enum CodingKeys: String, CodingKey {
         case timeslotDesc = "timeslot_desc"
         case timeslotPrice = "timeslot_price"

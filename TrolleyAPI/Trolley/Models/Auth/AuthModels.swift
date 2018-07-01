@@ -8,9 +8,9 @@
 
 import Foundation
 @objc public class AuthResponseDataModel: NSObject,Codable {
-    var accesstoken: String? = nil
-    var accesstokenExpiry: String? = nil
-    var customerId: String? = nil
+    public var accesstoken: String? = nil
+    public var accesstokenExpiry: String? = nil
+    public var customerId: String? = nil
     private enum CodingKeys: String, CodingKey {
         case accesstoken
         case accesstokenExpiry = "accesstoken_expiry"
@@ -18,8 +18,8 @@ import Foundation
     }
 }
 @objc public class AuthRequestDataModel:NSObject, Codable {
-    var login: String?
-    var password: String?
+    public var login: String?
+    public var password: String?
 }
 
 

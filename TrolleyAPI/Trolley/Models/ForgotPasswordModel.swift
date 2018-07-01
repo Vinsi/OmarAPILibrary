@@ -9,7 +9,7 @@
 import Foundation
 @objc public class ForgotPasswordDataRequestModel:NSObject,Codable{
     
-    var email:String?
+    public var email:String?
     
     
 }

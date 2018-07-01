@@ -9,11 +9,11 @@
 import Foundation
 class TrolleyResponseModel<ResponseDataModel:Any>:Codable where ResponseDataModel:Codable  {
     
-    var header       : HeaderResponseModel? = nil
-    var data         : ResponseDataModel?  = nil
-    var ins          : String?             = nil
-    var statusmessage: String?             = nil
-    var error        : Int?                = nil
+    public var header       : HeaderResponseModel? = nil
+    public var data         : ResponseDataModel?  = nil
+    public var ins          : String?             = nil
+    public var statusmessage: String?             = nil
+    public var error        : Int?                = nil
     
     public enum CodingKeys: String, CodingKey {
         case header

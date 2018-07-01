@@ -8,12 +8,12 @@
 
 import Foundation
 @objc public class RewardModel:NSObject, Codable {
-    var customerRewardId: String!
-    var customerId: String!
-    var orderId: String!
-     var rewarddescription: String!
-    var points: String!
-    var dateAdded: Date!
+    public var customerRewardId: String!
+    public var customerId: String!
+    public var orderId: String!
+     public var rewarddescription: String!
+    public var points: String!
+    public var dateAdded: Date!
     private enum CodingKeys: String, CodingKey {
         case customerRewardId = "customer_reward_id"
         case customerId = "customer_id"

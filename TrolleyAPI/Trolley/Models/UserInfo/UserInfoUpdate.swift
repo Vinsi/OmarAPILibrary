@@ -14,11 +14,11 @@ class UserInfoUpdateResponseDataModel: Codable {
     }
 }
 @objc public class UserInfoUpdateRequestDataModel: NSObject,Codable {
-    var telephone: String?
-    var firstname: String?
-    var lastname: String?
-    var email: String?
-    var phonePrefix: String?
+    public var telephone: String?
+    public var firstname: String?
+    public var lastname: String?
+    public var email: String?
+    public var phonePrefix: String?
     private enum CodingKeys: String, CodingKey {
         case telephone
       

@@ -8,29 +8,29 @@
 
 import Foundation
 @objc public class ItemSearchModel: NSObject,Codable {
-    var productId: String!
-    var languageId: String!
-    var name: String!
-    var model: String!
-    var unit: String!
-    var weight: String!
-    var pprice: String!
-    var categoryId: String!
-    var orginalCatid: String!
-    var sortOrder: String!
-    var image: String!
-    var prate: String!
-    var price: String!
-    var actualprice: String!
-    var offerprice: String? = nil
-    var metaDescription: String!
-    var status: String!
-    var weightClassId: String!
-    var productstock: String!
-    var aproductstock: String!
-    var sku: String!
-    var sortOrder2: String!
-    var sortCat: String!
+    public var productId: String!
+    public var languageId: String!
+    public var name: String!
+    public var model: String!
+    public var unit: String!
+    public var weight: String!
+    public var pprice: String!
+    public var categoryId: String!
+    public var orginalCatid: String!
+    public var sortOrder: String!
+    public var image: String!
+    public var prate: String!
+    public var price: String!
+    public var actualprice: String!
+    public var offerprice: String? = nil
+    public var metaDescription: String!
+    public var status: String!
+    public var weightClassId: String!
+    public var productstock: String!
+    public var aproductstock: String!
+    public var sku: String!
+    public var sortOrder2: String!
+    public var sortCat: String!
     private enum CodingKeys: String, CodingKey {
         case productId = "product_id"
         case languageId = "language_id"

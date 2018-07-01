@@ -9,12 +9,12 @@
 import Foundation
 @objc public class CategoryResponseDataModel: NSObject,Codable {
 
-        var image: String!
-        var categoryId: String!
-        var parentId: String!
-        var ischild: String!
-        var name: String!
-        var sortOrder: String!
+      public  var image: String!
+      public  var categoryId: String!
+      public  var parentId: String!
+      public  var ischild: String!
+      public  var name: String!
+      public  var sortOrder: String!
         private enum CodingKeys: String, CodingKey {
             case image
             case categoryId = "category_id"

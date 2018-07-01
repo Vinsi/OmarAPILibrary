@@ -8,30 +8,30 @@
 
 import Foundation
 class ItemModel: Codable {
-    var productId       : String? = nil
-    var languageId      : String? = nil
-    var name            : String? = nil
-    var nameAr          : String? = nil
-    var model           : String? = nil
-    var unit            : String? = nil
-    var weight          : String? = nil
-    var pprice          : String? = nil
-    var categoryId      : String? = nil
-    var orginalCatid    : String? = nil
-    var sortOrder       : String? = nil
-    var image           : String? = nil
-    var prate           : String? = nil
-    var price           : String? = nil
-    var actualprice     : String? = nil
-    var offerprice      : String? = nil
-    var metaDescription : String? = nil
-    var status          : String? = nil
-    var weightClassId   : String? = nil
-    var productstock    : String? = nil
-    var aproductstock   : String? = nil
-    var sku             : String? = nil
-    var sortOrder2      : String? = nil
-    var sortCat         : String? = nil
+    public var productId       : String? = nil
+    public var languageId      : String? = nil
+    public var name            : String? = nil
+    public var nameAr          : String? = nil
+    public var model           : String? = nil
+    public var unit            : String? = nil
+    public var weight          : String? = nil
+    public var pprice          : String? = nil
+    public var categoryId      : String? = nil
+    public var orginalCatid    : String? = nil
+    public var sortOrder       : String? = nil
+    public var image           : String? = nil
+    public var prate           : String? = nil
+    public var price           : String? = nil
+    public var actualprice     : String? = nil
+    public var offerprice      : String? = nil
+    public var metaDescription : String? = nil
+    public var status          : String? = nil
+    public var weightClassId   : String? = nil
+    public var productstock    : String? = nil
+    public var aproductstock   : String? = nil
+    public var sku             : String? = nil
+    public var sortOrder2      : String? = nil
+    public var sortCat         : String? = nil
     private enum CodingKeys: String, CodingKey {
         case productId = "product_id"
         case languageId = "language_id"

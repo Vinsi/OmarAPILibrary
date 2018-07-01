@@ -10,18 +10,18 @@ import Foundation
 
 @objc public class UserInfoResponseDataModel:NSObject, Codable {
     @objc public class ShippingAddresse: NSObject,Codable {
-        var firstname: String?
-        var lastname: String?
-        var addressId: String?
-        var zoneId: String?
-        var zoneName: String?
-        var apartmentNumber: String?
-        var address1: String?
-        var address2: String?
-        var countryId: String?
-        var countryName: String?
-        var areaname: String?
-        var zonecode: String?
+        public var firstname: String?
+        public var lastname: String?
+        public var addressId: String?
+        public var zoneId: String?
+        public var zoneName: String?
+        public var apartmentNumber: String?
+        public var address1: String?
+        public var address2: String?
+        public var countryId: String?
+        public var countryName: String?
+        public var areaname: String?
+        public var zonecode: String?
         private enum CodingKeys: String, CodingKey {
             case firstname
             case lastname
@@ -37,25 +37,25 @@ import Foundation
             case zonecode
         }
     }
-    var shippingAddresses: [ShippingAddresse]?
+    public var shippingAddresses: [ShippingAddresse]?
     @objc public class Userinfo: NSObject,Codable {
-        var customerId: String?
-        var storeId: String?
-        var firstname: String?
-        var lastname: String?
-        var email: String?
-        var prefix: String?
-        var telephone: String?
-        var fax: String?
-        var addressId: String?
-        var customerGroupId: String?
-        var ip: String?
-        var status: String?
-        var dateAdded: String?
-        var employeeId: String?
-        var cart: String?
-        var points: String?
-        var rewardrate: Double?
+        public var customerId: String?
+        public var storeId: String?
+        public var firstname: String?
+        public var lastname: String?
+        public var email: String?
+        public var prefix: String?
+        public var telephone: String?
+        public var fax: String?
+        public var addressId: String?
+        public var customerGroupId: String?
+        public var ip: String?
+        public var status: String?
+        public var dateAdded: String?
+        public var employeeId: String?
+        public var cart: String?
+        public var points: String?
+        public var rewardrate: Double?
         private enum CodingKeys: String, CodingKey {
             case customerId = "customer_id"
             case storeId = "store_id"
@@ -76,8 +76,8 @@ import Foundation
             case rewardrate
         }
     }
-    var userinfo: Userinfo?
-    var savedcart: [String]?
+    public var userinfo: Userinfo?
+    public var savedcart: [String]?
     private enum CodingKeys: String, CodingKey {
         case shippingAddresses = "shipping_addresses"
         case userinfo

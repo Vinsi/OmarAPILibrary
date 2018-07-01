@@ -9,78 +9,78 @@
 import Foundation
 @objc public class OrderGetDataModel:NSObject, Codable {
 
-        var orderId: String!
-        var invoiceNo: String!
-        var invoicePrefix: String!
-        var storeId: String!
-        var storeName: String!
-        var storeUrl: URL!
-        var customerId: String!
-        var customerGroupId: String!
-        var firstname: String!
-        var lastname: String!
-        var email: String!
-        var telephone: String!
-        var fax: String!
-        var shippingFirstname: String!
-        var shippingLastname: String!
-        var shippingCompany: String!
-        var shippingAddress1: String!
-        var shippingAddress2: String!
-        var shippingCity: String!
-        var shippingPostcode: String!
-        var shippingCountry: String!
-        var shippingCountryId: String!
-        var shippingZone: String!
-        var shippingZoneId: String!
-        var shippingAddressFormat: String!
-        var shippingMethod: String!
-        var paymentFirstname: String!
-        var paymentLastname: String!
-        var paymentCompany: String!
-        var paymentAddress1: String!
-        var paymentAddress2: String!
-        var paymentCity: String!
-        var paymentPostcode: String!
-        var paymentCountry: String!
-        var paymentCountryId: String!
-        var paymentZone: String!
-        var paymentZoneId: String!
-        var paymentAddressFormat: String!
-        var paymentMethod: String!
-        var comment: String!
-        var total: String!
-        var reward: String!
-        var orderStatusId: String!
-        var affiliateId: String!
-        var commission: String!
-        var languageId: String!
-        var currencyId: String!
-        var currencyCode: String!
-        var currencyValue: String!
-        var dateAdded: Date!
-        var dateModified: Date!
-        var ip: String!
-        var deliveryDate: String!
-        var deliveryTime: String!
-        var shopperId: String!
-        var driverId: String!
-        var addtional: String!
-        var cancelled: String!
-        var outside: String!
-        var aswaaq: String!
-        var paid: String!
-        var preference: String!
-        var source: String!
-        var eretailId: String!
-        var referer: String!
-        var timeslotId: String!
-        var timeslotDesc: String!
-        var timeslotPrice: String!
-        var timeslotCapacity: String!
-        var hour: String!
-        var duration: String!
-        var name: String!
+        public var orderId: String!
+        public var invoiceNo: String!
+        public var invoicePrefix: String!
+        public var storeId: String!
+        public var storeName: String!
+        public var storeUrl: URL!
+        public var customerId: String!
+        public var customerGroupId: String!
+        public var firstname: String!
+        public var lastname: String!
+        public var email: String!
+        public var telephone: String!
+        public var fax: String!
+        public var shippingFirstname: String!
+        public var shippingLastname: String!
+        public var shippingCompany: String!
+        public var shippingAddress1: String!
+        public var shippingAddress2: String!
+        public var shippingCity: String!
+        public var shippingPostcode: String!
+        public var shippingCountry: String!
+        public var shippingCountryId: String!
+        public var shippingZone: String!
+        public var shippingZoneId: String!
+        public var shippingAddressFormat: String!
+        public var shippingMethod: String!
+        public var paymentFirstname: String!
+        public var paymentLastname: String!
+        public var paymentCompany: String!
+        public var paymentAddress1: String!
+        public var paymentAddress2: String!
+        public var paymentCity: String!
+        public var paymentPostcode: String!
+        public var paymentCountry: String!
+        public var paymentCountryId: String!
+        public var paymentZone: String!
+        public var paymentZoneId: String!
+        public var paymentAddressFormat: String!
+        public var paymentMethod: String!
+        public var comment: String!
+        public var total: String!
+        public var reward: String!
+        public var orderStatusId: String!
+        public var affiliateId: String!
+        public var commission: String!
+        public var languageId: String!
+        public var currencyId: String!
+        public var currencyCode: String!
+        public var currencyValue: String!
+        public var dateAdded: Date!
+        public var dateModified: Date!
+        public var ip: String!
+        public var deliveryDate: String!
+        public var deliveryTime: String!
+        public var shopperId: String!
+        public var driverId: String!
+        public var addtional: String!
+        public var cancelled: String!
+        public var outside: String!
+        public var aswaaq: String!
+        public var paid: String!
+        public var preference: String!
+        public var source: String!
+        public var eretailId: String!
+        public var referer: String!
+        public var timeslotId: String!
+        public var timeslotDesc: String!
+        public var timeslotPrice: String!
+        public var timeslotCapacity: String!
+        public var hour: String!
+        public var duration: String!
+        public var name: String!
         private enum CodingKeys: String, CodingKey {
             case orderId = "order_id"
             case invoiceNo = "invoice_no"

@@ -8,41 +8,41 @@
 
 import Foundation
 @objc public class ProductsInCategoryRequestDataModel:NSObject, Codable {
-    var categoryId: String? = nil
+    public var categoryId: String? = nil
     private enum CodingKeys: String, CodingKey {
         case categoryId = "category_id"
     }
 }
 @objc public class ProductsInCategoryResponseDataModel: NSObject,Codable {
     class Row: Codable {
-        var parentId: String!
-        var ischild: String!
-        var categoryname: String!
-        var catsortOrder: String!
-        var productId: String!
-        var languageId: String!
-        var name: String!
-        var nameAr: String!
-        var model: String!
-        var unit: String!
-        var weight: String!
-        var pprice: String!
-        var categoryId: String!
-        var orginalCatid: String!
-        var sortOrder: String!
-        var image: String!
-        var prate: String!
-        var price: String!
-        var actualprice: String!
-        var offerprice: String!
-        var metaDescription: String!
-        var status: String!
-        var weightClassId: String!
-        var productstock: String!
-        var aproductstock: String!
-        var sku: String!
-        var sortOrder2: String!
-        var sortCat: String!
+        public var parentId: String!
+        public var ischild: String!
+        public var categoryname: String!
+        public var catsortOrder: String!
+        public var productId: String!
+        public var languageId: String!
+        public var name: String!
+        public var nameAr: String!
+        public var model: String!
+        public var unit: String!
+        public var weight: String!
+        public var pprice: String!
+        public var categoryId: String!
+        public var orginalCatid: String!
+        public var sortOrder: String!
+        public var image: String!
+        public var prate: String!
+        public var price: String!
+        public var actualprice: String!
+        public var offerprice: String!
+        public var metaDescription: String!
+        public var status: String!
+        public var weightClassId: String!
+        public var productstock: String!
+        public var aproductstock: String!
+        public var sku: String!
+        public var sortOrder2: String!
+        public var sortCat: String!
         private enum CodingKeys: String, CodingKey {
             case parentId = "parent_id"
             case ischild
@@ -74,29 +74,29 @@ import Foundation
             case sortCat = "sort_cat"
         }
     }
-    var rows: [Row]!
+    public var rows: [Row]!
     class Maincategoryinfo: Codable {
-        var categoryId: String!
-        var image: String!
-        var parentId: String!
-        var top: String!
-        var column: String!
-        var sortOrder: String!
-        var status: String!
-        var dateAdded: Date!
-        var dateModified: Date!
-        var urlAlias: String!
-        var color: String!
-        var languageId: String!
-        var name: String!
-        var description: String!
-        var metaDescription: String!
-        var metaKeyword: String!
-        var bannerId: String!
-        var bannerName: String!
-        var bannerMobileId: String!
-        var bannerMobileName: String!
-        var sortBreak: String!
+        public var categoryId: String!
+        public var image: String!
+        public var parentId: String!
+        public var top: String!
+        public var column: String!
+        public var sortOrder: String!
+        public var status: String!
+        public var dateAdded: Date!
+        public var dateModified: Date!
+        public var urlAlias: String!
+        public var color: String!
+        public var languageId: String!
+        public var name: String!
+        public var description: String!
+        public var metaDescription: String!
+        public var metaKeyword: String!
+        public var bannerId: String!
+        public var bannerName: String!
+        public var bannerMobileId: String!
+        public var bannerMobileName: String!
+        public var sortBreak: String!
         private enum CodingKeys: String, CodingKey {
             case categoryId = "category_id"
             case image
@@ -121,6 +121,6 @@ import Foundation
             case sortBreak = "sort_break"
         }
     }
-    var maincategoryinfo: Maincategoryinfo!
+    public var maincategoryinfo: Maincategoryinfo!
 }
 //:MARK

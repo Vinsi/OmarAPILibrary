@@ -9,7 +9,7 @@
 import Foundation
 @objc public class SearchNameDataRequestModel:NSObject,Codable{
     
-    var key: String? = nil
+   public var key: String? = nil
     private enum CodingKeys: String, CodingKey {
         case key = "key"
     }

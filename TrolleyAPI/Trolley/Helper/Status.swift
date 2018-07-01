@@ -9,11 +9,11 @@
 import Foundation
 @objc public class Status :NSObject {
     
-    var statusMessage:String = ""
-    var statusCode:Int = 0
+    public var statusMessage:String = ""
+    public var statusCode:Int = 0
    
   
-    func hasError()->Bool{
+    public func hasError()->Bool{
         return statusCode > 0
         
     }

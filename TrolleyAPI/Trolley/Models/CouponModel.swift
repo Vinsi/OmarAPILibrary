@@ -9,8 +9,8 @@
 import Foundation
 class CouponDataRequestModel:Codable {
     
-    var orderedItems:[ItemModel]?
-    var couponcode:String?
+    public var orderedItems:[ItemModel]?
+    public var couponcode:String?
     private enum CodingKeys: String, CodingKey {
         case orderedItems = "order_items"
         case couponcode

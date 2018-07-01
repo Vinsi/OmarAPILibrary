@@ -9,6 +9,6 @@
 import Foundation
 @objc public class PaswordResetDataRequestModel:NSObject,Codable{
     
-    var password:String?
+   public var password:String?
     
 }

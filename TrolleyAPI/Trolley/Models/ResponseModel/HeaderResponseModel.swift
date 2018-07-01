@@ -8,10 +8,10 @@
 
 import Foundation
 @objc public class HeaderResponseModel:NSObject, Codable {
-    var info : String?
-    var ver  : String?
-    var reqID: String?
-    var logID: String?
-    var date : String?
+    public var info : String?
+    public var ver  : String?
+    public var reqID: String?
+    public var logID: String?
+    public var date : String?
     
 }

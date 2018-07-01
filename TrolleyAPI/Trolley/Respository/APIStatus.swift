@@ -8,8 +8,8 @@
 
 import Foundation
 @objc public class APIStatus:Status{
-    var rawdata:String?
-    var header:HeaderResponseModel!
+    public var rawdata:String?
+    public var header:HeaderResponseModel!
     private var endPointStatus:Status!
     private var operationStatus:Status!
     var status:Status!
@@ -36,7 +36,7 @@ import Foundation
         }
         
     }
-    override var statusMessage: String {
+   public override var statusMessage: String {
         get {
             return self.status.statusMessage
         }

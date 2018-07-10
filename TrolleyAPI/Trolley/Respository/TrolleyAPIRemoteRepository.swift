@@ -365,7 +365,25 @@ import Foundation
         
         
     }
-    
+    // Coupon
+    public func couponVerify(param:CouponDataRequestModel,callback: @escaping (APIStatus,CouponDataResponseModel?) -> Void)->IRequest {
+        let obj    =  TrolleyRequestModel<CouponDataRequestModel>()
+        obj.data   =  param
+        obj.header =  getRequestHeader(session: self.sessionObject!)
+        let request = self.httpEngine.performRequest(route:APIRouters.Coupon.discount(request: obj),
+                                                     responsetype: TrolleyResponseModel<CouponDataResponseModel>.self) { (status, obj) in
+                                                        
+                                                        if status.hasError() == false {
+                                                            status.setEndPointStatus(status: Status.CreateStatus(statusCode: (obj?.error)!, statusMessage: (obj?.statusmessage)!))
+                                                            status.header = obj?.header
+                                                        }
+                                                        callback(status,obj?.data)
+        }
+        return request
+        
+        
+        
+    }
     // Order
     public func orderAdd( param: OrderRequestDataModel, callback: @escaping (APIStatus, OrderResponseDataModel?) -> Void) -> IRequest {
         

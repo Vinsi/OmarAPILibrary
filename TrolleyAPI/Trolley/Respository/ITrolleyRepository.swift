@@ -58,7 +58,8 @@ import Foundation
     //Mark Timeslot Repositories
       @discardableResult
     func timeSlot(param:TimeSlotRequestDataModel,callback: @escaping (APIStatus, [TimeSlotModel]?) -> Void)->IRequest
-    
+    // Coupon
+    func couponVerify(param:CouponDataRequestModel,callback: @escaping (APIStatus,CouponDataResponseModel?) -> Void)->IRequest
     //Mark Order Repositories
       @discardableResult
     func ordersGet(callback: @escaping (APIStatus,[OrderGetDataModel]?) -> Void)->IRequest

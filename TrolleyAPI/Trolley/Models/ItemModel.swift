@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class ItemModel: Codable {
+@objc public class ItemModel:NSObject, Codable {
     public var productId       : String? = nil
     public var languageId      : String? = nil
     public var name            : String? = nil

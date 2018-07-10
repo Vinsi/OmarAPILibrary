@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class CouponDataRequestModel:Codable {
+@objc public  class CouponDataRequestModel:NSObject,Codable {
     
     public var orderedItems:[ItemModel]?
     public var couponcode:String?
@@ -16,5 +16,16 @@ class CouponDataRequestModel:Codable {
         case couponcode
         
     }
+    
+}
+
+@objc public  class CouponDataResponseModel:NSObject,Codable {
+    
+     public var subtotalamount:String?
+     public var couponamount:String?
+     public var deliveryamount:String?
+     public var finaltotalamount:String?
+
+   
     
 }

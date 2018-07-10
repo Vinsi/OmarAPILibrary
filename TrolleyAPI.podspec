@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.name         = "TrolleyAPI"
 
-  s.version      = "0.5.0"
+  s.version      = "0.6.0"
 
   s.summary      = "TrolleyAPI - Library"
 

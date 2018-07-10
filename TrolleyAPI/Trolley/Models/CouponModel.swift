@@ -28,10 +28,10 @@ import Foundation
 
 @objc public  class CouponDataResponseModel:NSObject,Codable {
     
-     public var subtotalamount:String?
-     public var couponamount:String?
-     public var deliveryamount:String?
-     public var finaltotalamount:String?
+     public var subtotalamount:Float?
+     public var couponamount:Float?
+     public var deliveryamount:Float?
+     public var finaltotalamount:Float?
 
    
     

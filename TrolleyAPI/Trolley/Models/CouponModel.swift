@@ -7,9 +7,16 @@
 //
 
 import Foundation
+@objc public class CouponApplyItems:NSObject,Codable {
+    public var category_id:String? = nil
+    public var product_id:String? = nil
+    public var quantity:Int? = nil
+    
+}
+
 @objc public  class CouponDataRequestModel:NSObject,Codable {
     
-    public var orderedItems:[ItemModel]?
+    public var orderedItems:[CouponApplyItems]?
     public var couponcode:String?
     private enum CodingKeys: String, CodingKey {
         case orderedItems = "order_items"

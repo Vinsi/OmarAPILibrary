@@ -16,6 +16,8 @@ import Foundation
     public var  countryId         : String?
     public var  customerId        : String?
     public var  apartmentNumber   : String?
+    public var latitude                : Float? = nil
+    public var longtitude               : Float? = nil
     private enum CodingKeys: String, CodingKey {
         case zoneid
         case action
@@ -25,6 +27,8 @@ import Foundation
         case countryId       = "country_id"
         case customerId      = "customer_id"
         case apartmentNumber = "apartment_number"
+        case latitude
+        case longtitude
     }
 }
 

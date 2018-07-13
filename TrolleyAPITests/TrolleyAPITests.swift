@@ -52,7 +52,46 @@ class TrolleyAPITests: XCTestCase {
         wait(for: [expectation], timeout: 20.0)
     }
     
-
+    func testSearch(){
+        
+        let expectation = XCTestExpectation(description: "getting")
+        let search = SearchNameDataRequestModel()
+        search.key = "tea"
+        manager.accessPoint()?.searchForName(param: search, callback: { (status, items) in
+         
+            
+            if(status.hasError()){
+                print("failed"+status.statusMessage)
+                return
+            }
+            print(items?[0].productname)
+            expectation.fulfill()
+            
+            
+        })
+        wait(for: [expectation], timeout: 20.0)
+    }
+    
+    func testCategoryProductFetch(){
+        
+        let expectation = XCTestExpectation(description: "getting")
+        let productRequest = ProductsInCategoryRequestDataModel()
+        productRequest.categoryId = "2"
+        manager.accessPoint()?.getItems(param: productRequest, callback: { (status, categories) in
+            
+            if(status.hasError()){
+                print("failed"+status.statusMessage)
+                return
+            }
+            
+//            print(categories?.rows[)
+            expectation.fulfill()
+            
+            
+        })
+        wait(for: [expectation], timeout: 20.0)
+    }
+    
     func testUserAuth() {
 
         let expectation = XCTestExpectation(description: "getting")

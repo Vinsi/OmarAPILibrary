@@ -132,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "552134315.841009"
+            timestampString = "553189815.323591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "testUserAuth()"
             landmarkType = "7">
          </BreakpointContent>
@@ -148,11 +148,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "552134315.841313"
+            timestampString = "553189815.32398"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "testUserInfo()"
             landmarkType = "7">
          </BreakpointContent>
@@ -180,27 +180,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "552134315.84161"
+            timestampString = "553189815.3241071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "testCategoryFetch()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "552134315.841804"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "testUserInfoupdate()"
             landmarkType = "7">
          </BreakpointContent>
@@ -212,11 +196,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "552134315.84199"
+            timestampString = "553189815.324205"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "testUserInfoupdate()"
             landmarkType = "7">
          </BreakpointContent>
@@ -228,11 +212,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "552134315.84217"
+            timestampString = "553189815.3242871"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "testUserInfoupdate()"
             landmarkType = "7">
          </BreakpointContent>
@@ -244,11 +228,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "552134315.8423541"
+            timestampString = "553189815.324368"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
             landmarkName = "testOrderAdd()"
             landmarkType = "7">
             <Locations>
@@ -259,13 +243,13 @@
                   symbolName = "TrolleyAPITests.TrolleyAPITests.testOrderAdd() -&gt; ()"
                   moduleName = "TrolleyAPITests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vinsi/Desktop/Vinsi/TrolleyAPITests/TrolleyAPITests.swift"
-                  timestampString = "552134318.053472"
+                  urlString = "file:///Users/vinsi/Documents/Library/Vinsi/TrolleyAPITests/TrolleyAPITests.swift"
+                  timestampString = "553189820.339636"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "222"
-                  endingLineNumber = "222"
-                  offsetFromSymbolStart = "2888">
+                  startingLineNumber = "261"
+                  endingLineNumber = "261"
+                  offsetFromSymbolStart = "2912">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -274,12 +258,12 @@
                   symbolName = "closure #1 (TrolleyAPI.APIStatus, Swift.Optional&lt;TrolleyAPI.OrderResponseDataModel&gt;) -&gt; () in TrolleyAPITests.TrolleyAPITests.testOrderAdd() -&gt; ()"
                   moduleName = "TrolleyAPITests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vinsi/Desktop/Vinsi/TrolleyAPITests/TrolleyAPITests.swift"
-                  timestampString = "552134318.055217"
+                  urlString = "file:///Users/vinsi/Documents/Library/Vinsi/TrolleyAPITests/TrolleyAPITests.swift"
+                  timestampString = "553189820.342468"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "225"
-                  endingLineNumber = "225"
+                  startingLineNumber = "264"
+                  endingLineNumber = "264"
                   offsetFromSymbolStart = "32">
                </Location>
             </Locations>
@@ -292,76 +276,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "552134315.842535"
+            timestampString = "553189815.324447"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
+            startingLineNumber = "289"
+            endingLineNumber = "289"
             landmarkName = "testTimeSlot()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TrolleyAPI/Trolley/RepoManager/TrolleyRepositoryManager.swift"
-            timestampString = "552134315.842718"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "IRepositoryManager"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TrolleyAPI.TrolleyRepositoryManager.__deallocating_deinit"
-                  moduleName = "TrolleyAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vinsi/Desktop/Vinsi/TrolleyAPI/Trolley/RepoManager/TrolleyRepositoryManager.swift"
-                  timestampString = "552134318.065486"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TrolleyAPI.TrolleyRepositoryManager.__allocating_init() -&gt; TrolleyAPI.TrolleyRepositoryManager"
-                  moduleName = "TrolleyAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vinsi/Desktop/Vinsi/TrolleyAPI/Trolley/RepoManager/TrolleyRepositoryManager.swift"
-                  timestampString = "552134318.069958"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TrolleyAPI.TrolleyRepositoryManager.init() -&gt; TrolleyAPI.TrolleyRepositoryManager"
-                  moduleName = "TrolleyAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vinsi/Desktop/Vinsi/TrolleyAPI/Trolley/RepoManager/TrolleyRepositoryManager.swift"
-                  timestampString = "552134318.072535"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -371,12 +302,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "552134315.84276"
+            timestampString = "553189815.324527"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "setUp()"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "testCategoryProductFetch()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -387,12 +318,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "552134349.102235"
+            timestampString = "553189815.324594"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "testCategoryFetch()"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "testSearch()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrolleyAPITests/TrolleyAPITests.swift"
+            timestampString = "553189815.324659"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "testSearch()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

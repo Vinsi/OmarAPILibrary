@@ -30,7 +30,7 @@ import Foundation
     @discardableResult
     func userResetPassword(param:PaswordResetDataRequestModel,callback: @escaping (APIStatus) -> Void)->IRequest
       @discardableResult
-    func userOrderedProducts(callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest
+    func userOrderedProducts(callback: @escaping (APIStatus,[ItemModel]?) -> Void)->IRequest
      @discardableResult
     func userInfo( callback: @escaping (APIStatus, UserInfoResponseDataModel?) -> Void)->IRequest
       @discardableResult
@@ -70,9 +70,9 @@ import Foundation
     
     //Mark Search Repositories
       @discardableResult
-    func searchForName(param:SearchNameDataRequestModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest
+    func searchForName(param:SearchNameDataRequestModel, callback: @escaping (APIStatus,[ItemModel]?) -> Void)->IRequest
       @discardableResult
-    func searchForSku(param:SearchSkuRequestDataModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest
+    func searchForSku(param:SearchSkuRequestDataModel, callback: @escaping (APIStatus,[ItemModel]?) -> Void)->IRequest
     
 }
 

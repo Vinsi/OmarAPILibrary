@@ -22,6 +22,8 @@ import Foundation
     public var address2           : String? = nil
     public var postcode           : String? = nil
     public var countryId          : String? = nil
+    public var latitude                : Float? = nil
+    public var longtitude               : Float? = nil
     private enum CodingKeys: String, CodingKey {
         case zoneid
         case apartmentNumber    = "apartment_number"
@@ -36,6 +38,8 @@ import Foundation
         case address2           = "address_2"
         case postcode
         case countryId          = "country_id"
+        case latitude
+        case longtitude
     }
 }
 class NewLocationResponseDataModel: Codable {

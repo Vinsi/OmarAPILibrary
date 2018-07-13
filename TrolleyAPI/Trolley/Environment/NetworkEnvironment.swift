@@ -11,11 +11,13 @@ enum NetworkEnvironment {
     case qa
     case production
     case staging
+    case testingLocal
     func urlBase()->String{
         switch self {
         case .production: return "http://www.trolley.ae:80/image/data/icons_mobile/phpfiles/Trolley/public/api/v2"
         case .qa        : return "http://www.trolley.ae:80/image/data/icons_mobile/phpfiles/Trolley/public/api/v2"
         case .staging   : return "http://www.trolley.ae:80/image/data/icons_mobile/phpfiles/Trolley/public/api/v2"
+        case .testingLocal   : return "http://localhost/Trolley/public/api/v2"
         }
     }
 }

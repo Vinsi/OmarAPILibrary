@@ -159,11 +159,11 @@ import Foundation
     return request
     }
     
-    public func userOrderedProducts(callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest {
+    public func userOrderedProducts(callback: @escaping (APIStatus,[ItemModel]?) -> Void)->IRequest {
         let obj = HistoryProductRequestModel();
         obj.header =  getRequestHeader(session: self.sessionObject!)
         let request = self.httpEngine.performRequest(route: APIRouters.User.orderedProduct(request: obj),
-                                                     responsetype: TrolleyResponseModel<[ItemSearchModel]>.self) { (status, obj) in
+                                                     responsetype: TrolleyResponseModel<[ItemModel]>.self) { (status, obj) in
                                                         
                                                         if status.hasError() == false {
                                                             status.setEndPointStatus(status: Status.CreateStatus(statusCode: (obj?.error)!, statusMessage: (obj?.statusmessage)!))
@@ -439,24 +439,24 @@ import Foundation
     }
     // Mark search
     
-    public func searchForName(param:SearchNameDataRequestModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest {
+    public func searchForName(param:SearchNameDataRequestModel, callback: @escaping (APIStatus,[ItemModel]?) -> Void)->IRequest {
     let obj    =    TrolleyRequestModel<SearchNameDataRequestModel>()
     obj.data   =   param
     obj.header =  getRequestHeader(session: self.sessionObject!)
     let request = self.httpEngine.performRequest(route: APIRouters.Search.searchByName(request: obj),
-    responsetype: TrolleyResponseModel<[ItemSearchModel]>.self) { (status, obj) in
+    responsetype: TrolleyResponseModel<[ItemModel]>.self) { (status, obj) in
     
     callback(status,obj?.data)
     }
     return request
     }
     
-    public func searchForSku(param:SearchSkuRequestDataModel, callback: @escaping (APIStatus,[ItemSearchModel]?) -> Void)->IRequest {
+    public func searchForSku(param:SearchSkuRequestDataModel, callback: @escaping (APIStatus,[ItemModel]?) -> Void)->IRequest {
         let obj    =    TrolleyRequestModel<SearchSkuRequestDataModel>()
         obj.data   =   param
         obj.header =  getRequestHeader(session: self.sessionObject!)
         let request = self.httpEngine.performRequest(route: APIRouters.Search.searchBySku(request: obj),
-                                                     responsetype: TrolleyResponseModel<[ItemSearchModel]>.self) { (status, obj) in
+                                                     responsetype: TrolleyResponseModel<[ItemModel]>.self) { (status, obj) in
                                                         
                                                         callback(status,obj?.data)
         }

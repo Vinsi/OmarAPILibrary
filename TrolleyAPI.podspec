@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'Fakery'   , '~> 3.3.0'
 
-  s.dependency 'Fakery' pod 'Format', '~> 0.5'
+  s.dependency 'Format', '~> 0.5'
 
 
 

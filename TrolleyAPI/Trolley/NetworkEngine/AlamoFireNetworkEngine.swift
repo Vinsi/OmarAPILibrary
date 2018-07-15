@@ -40,16 +40,16 @@ import Alamofire
     func performRequest<T>(route: EndPointType, responsetype:T.Type ,completion: @escaping ( APIStatus,T?) -> Void) -> IRequest where T : Decodable {
 
         
-        var proxyConfiguration = [NSObject: AnyObject]()
-        proxyConfiguration[kCFNetworkProxiesHTTPProxy]   = "192.168.19.104" as AnyObject
-        proxyConfiguration[kCFNetworkProxiesHTTPPort]    = "5555" as AnyObject
-        proxyConfiguration[kCFNetworkProxiesHTTPEnable]  = 1 as AnyObject
+//        var proxyConfiguration = [NSObject: AnyObject]()
+//        proxyConfiguration[kCFNetworkProxiesHTTPProxy]   = "192.168.19.104" as AnyObject
+//        proxyConfiguration[kCFNetworkProxiesHTTPPort]    = "5555" as AnyObject
+//        proxyConfiguration[kCFNetworkProxiesHTTPEnable]  = 1 as AnyObject
         
 
 
         //proxyConfiguration[kCFProxyPasswordKey as String] = "pwd if any"
-        let cfg = Alamofire.SessionManager.default.session.configuration
-        cfg.connectionProxyDictionary = proxyConfiguration
+//        let cfg = Alamofire.SessionManager.default.session.configuration
+//        cfg.connectionProxyDictionary = proxyConfiguration
         
 
      

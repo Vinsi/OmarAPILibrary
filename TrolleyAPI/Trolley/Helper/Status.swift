@@ -17,6 +17,10 @@ import Foundation
         return statusCode > 0
         
     }
+    public func isSuccess()->Bool{
+        return statusCode == 0
+        
+    }
     static func CreateStatus(statusCode:Int, statusMessage:String)->Status{
         let st = Status()
         st.statusCode = statusCode

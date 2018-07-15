@@ -15,7 +15,7 @@ class HeaderRequestModel : Codable {
     var accesstoken: String?
     var deviceTime: Date?
     var deviceType: String?
-    var logid: Int?
+    var logid: String?
     
     
     public enum CodingKeys: String, CodingKey {

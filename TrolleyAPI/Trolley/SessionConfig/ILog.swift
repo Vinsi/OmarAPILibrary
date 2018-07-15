@@ -9,7 +9,7 @@
 import Foundation
 @objc public  protocol IIDGenerator {
   
-    func getNewID()->Int
+    func getNewID()->String
 
     
 }

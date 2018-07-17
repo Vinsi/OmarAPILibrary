@@ -126,7 +126,7 @@ public extension ItemModel {
        
         let url = URL(fileURLWithPath: path)
         let fileExtension = url.pathExtension
-        let fileWithoutExtension = url.deletingPathExtension().absoluteString
+        let fileWithoutExtension = url.deletingPathExtension().relativeString
         let imageBaseurl = "http://trolley.ae/image/cache"
         let resizeSquare = toSize
         let newurl = String(format: "%@/%@-%dx%d.%@",imageBaseurl,fileWithoutExtension,resizeSquare,resizeSquare,fileExtension)

@@ -7,6 +7,10 @@
 //
 
 import Foundation
+//public enum imageSize{
+//    case size14
+//
+//}
 @objc public class ItemModel:NSObject, Codable {
     
     public var productId       : String? = nil
@@ -100,7 +104,7 @@ import Foundation
 
 public extension ItemModel {
     
-    func isOfferAvailable()->Bool{
+    public func isOfferAvailable()->Bool{
         guard let offer  = self.offerprice else {
             return false
             
@@ -114,5 +118,21 @@ public extension ItemModel {
         }
         
         
+    }
+   public func getImageUrl(toSize:Int)->URL? {
+        
+        guard let path = self.image else { return nil}
+        
+       
+        let url = URL(fileURLWithPath: path)
+        let fileExtension = url.pathExtension
+        let fileWithoutExtension = url.deletingPathExtension().absoluteString
+        let imageBaseurl = "http://trolley.ae/image/cache"
+        let resizeSquare = toSize
+        let newurl = String(format: "%@/%@-%dx%d.%@",imageBaseurl,fileWithoutExtension,resizeSquare,resizeSquare,fileExtension)
+         let escapedurl = newurl.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+         let urlPath = URL(string: escapedurl!)
+         return urlPath
+    
     }
 }

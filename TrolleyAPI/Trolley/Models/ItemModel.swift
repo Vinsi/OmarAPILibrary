@@ -130,7 +130,7 @@ public extension ItemModel {
         let imageBaseurl = "http://trolley.ae/image/cache"
         let resizeSquare = toSize
         let newurl = String(format: "%@/%@-%dx%d.%@",imageBaseurl,fileWithoutExtension,resizeSquare,resizeSquare,fileExtension)
-         let escapedurl = newurl.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+         let escapedurl = newurl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.URLQueryAllowedCharacterSet())
          let urlPath = URL(string: escapedurl!)
          return urlPath
     

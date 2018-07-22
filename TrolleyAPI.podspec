@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
 
   s.source_files = "TrolleyAPI/**/*.{swift}"
 
-   s.resources = "TrolleyAPI/Resources/**/*"
+   s.resources = "TrolleyAPI/Trolley/Resources/**/*"
   s.exclude_files = "Classes/Exclude"
 
 

@@ -342,7 +342,7 @@ func testOrderAdd() {
     }
     func testBanner(){
         
-           secureManager.accessPoint()?.searchBannerURL(forCategoryID: "16")
+         let url =  secureManager.accessPoint()?.searchBannerURL(forCategoryID: "16")
         
         
     }

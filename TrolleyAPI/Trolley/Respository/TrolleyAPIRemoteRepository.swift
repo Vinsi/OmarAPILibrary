@@ -12,8 +12,8 @@ import Foundation
     public func searchBannerURL(forCategoryID: String) -> URL? {
         
         var banners:Array<Dictionary<String,Any>> = []
-        let bundle = Bundle(for: type(of: self))
-        if let path = bundle.path(forResource: "Banners", ofType: "plist") {
+        let bundle = Bundle(identifier: "com.vinsi.TrolleyAPI")
+        if let path = bundle?.path(forResource: "Banners", ofType: "plist") {
             banners = NSArray(contentsOfFile: path) as! [Dictionary<String,Any>]
     
         }

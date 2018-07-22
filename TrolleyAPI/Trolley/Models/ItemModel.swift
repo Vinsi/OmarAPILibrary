@@ -19,6 +19,7 @@ import Foundation
     public var unit            : String? = nil
     public var weight          : String? = nil
     public var categoryId      : String? = nil
+    public var categoryName     : String? = nil
     public var sortOrder       : Float?  = nil
     public var image           : String? = nil
     public var profitAmount    : Float?  = nil
@@ -47,7 +48,7 @@ import Foundation
                 status          = try container.decode(String.self, forKey: CodingKeys.status         )
                 sku             = try container.decode(String.self, forKey: CodingKeys.sku            )
                 languageId      = try container.decode(String.self, forKey: CodingKeys.languageId     )
-
+                categoryName      = try container.decode(String.self, forKey: CodingKeys.categoryName     )
                let s_sortOrder       = try container.decode(String.self, forKey: CodingKeys.sortOrder      )
                let s_profitAmount    = try container.decode(String.self, forKey: CodingKeys.profitAmount   )
                let s_price           = try container.decode(String.self, forKey: CodingKeys.price          )
@@ -86,6 +87,7 @@ import Foundation
         case weight
    
         case categoryId = "orginal_catid"
+        case categoryName = "categoryname"
         case sortOrder = "sort_order"
         case image
         case profitAmount = "prate"

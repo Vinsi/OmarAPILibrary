@@ -148,7 +148,7 @@
 		A9D429B720711228000C5CA6 /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardModel.swift; sourceTree = "<group>"; };
 		A9D429BA20711312000C5CA6 /* ProductInSubcat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInSubcat.swift; sourceTree = "<group>"; };
 		A9D429BC2071150A000C5CA6 /* NewLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocation.swift; sourceTree = "<group>"; };
-		A9EF5B7721049A60005A4988 /* Banners.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Banners.plist; sourceTree = "<group>"; };
+		A9EF5B7721049A60005A4988 /* Banners.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Banners.plist; sourceTree = "<group>"; };
 		E1AEC0A208936516F08CB881 /* Pods_TrolleyAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrolleyAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6029179329CD95EC27B44B0 /* Pods-TrolleyAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrolleyAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrolleyAPI/Pods-TrolleyAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +194,7 @@
 		A90540EE20DA377800090472 /* Trolley */ = {
 			isa = PBXGroup;
 			children = (
+				A968CD0E21051660006921F3 /* Resources */,
 				A94B9F2420E4F8A100D7A53A /* Environment */,
 				A94B9F2320E4F83C00D7A53A /* Router */,
 				A94B9F2220E4F80E00D7A53A /* RepoManager */,
@@ -262,7 +263,6 @@
 				A98D17E92074D6AE00543BE8 /* TrolleyAPIRemoteRepository.swift */,
 				A90540EF20DA37A300090472 /* ITrolleyRepository.swift */,
 				A94B9F2B20E5159E00D7A53A /* APIStatus.swift */,
-				A9EF5B7721049A60005A4988 /* Banners.plist */,
 			);
 			path = Respository;
 			sourceTree = "<group>";
@@ -298,6 +298,14 @@
 				A991627320DF883800691962 /* NetworkEnvironment.swift */,
 			);
 			path = Environment;
+			sourceTree = "<group>";
+		};
+		A968CD0E21051660006921F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9EF5B7721049A60005A4988 /* Banners.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A991626F20DF875000691962 /* TrolleyEndPoint */ = {

@@ -74,6 +74,9 @@ import Foundation
       @discardableResult
     func searchForSku(param:SearchSkuRequestDataModel, callback: @escaping (APIStatus,[ItemModel]?) -> Void)->IRequest
     
+    func searchBannerURL(forCategoryID:String)->URL?
+    
+
 }
 
 

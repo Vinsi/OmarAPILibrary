@@ -340,6 +340,12 @@ func testOrderAdd() {
         let futuredateString = dateFormatterGet.string(from: futureDate!)
         return futuredateString
     }
+    func testBanner(){
+        
+           secureManager.accessPoint()?.searchBannerURL(forCategoryID: "16")
+        
+        
+    }
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

@@ -68,6 +68,7 @@
 		A9D429B820711228000C5CA6 /* RewardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429B720711228000C5CA6 /* RewardModel.swift */; };
 		A9D429BB20711312000C5CA6 /* ProductInSubcat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429BA20711312000C5CA6 /* ProductInSubcat.swift */; };
 		A9D429BD2071150A000C5CA6 /* NewLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D429BC2071150A000C5CA6 /* NewLocation.swift */; };
+		A9EF5B7821049A60005A4988 /* Banners.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9EF5B7721049A60005A4988 /* Banners.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,7 @@
 		A9D429B720711228000C5CA6 /* RewardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardModel.swift; sourceTree = "<group>"; };
 		A9D429BA20711312000C5CA6 /* ProductInSubcat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInSubcat.swift; sourceTree = "<group>"; };
 		A9D429BC2071150A000C5CA6 /* NewLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLocation.swift; sourceTree = "<group>"; };
+		A9EF5B7721049A60005A4988 /* Banners.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Banners.plist; sourceTree = "<group>"; };
 		E1AEC0A208936516F08CB881 /* Pods_TrolleyAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrolleyAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6029179329CD95EC27B44B0 /* Pods-TrolleyAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrolleyAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrolleyAPI/Pods-TrolleyAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -260,6 +262,7 @@
 				A98D17E92074D6AE00543BE8 /* TrolleyAPIRemoteRepository.swift */,
 				A90540EF20DA37A300090472 /* ITrolleyRepository.swift */,
 				A94B9F2B20E5159E00D7A53A /* APIStatus.swift */,
+				A9EF5B7721049A60005A4988 /* Banners.plist */,
 			);
 			path = Respository;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9EF5B7821049A60005A4988 /* Banners.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

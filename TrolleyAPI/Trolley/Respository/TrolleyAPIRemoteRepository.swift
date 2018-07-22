@@ -9,6 +9,29 @@
 import Foundation
 @objc public  class TrolleyAPIRemoteRepository :NSObject ,ITrolleyRepository
 {
+    public func searchBannerURL(forCategoryID: String) -> URL? {
+        
+        var banners:Array<Dictionary<String,Any>> = []
+        let bundle = Bundle(for: type(of: self))
+        if let path = bundle.path(forResource: "Banners", ofType: "plist") {
+            banners = NSArray(contentsOfFile: path) as! [Dictionary<String,Any>]
+    
+        }
+      
+        var i:Int = 0
+        var url:URL? = nil
+        while(i < banners.count) {
+            let catid = banners[i]["category_id"] as! NSNumber
+            if  catid.intValue == Int(forCategoryID) {
+                url = URL(string:  banners[i]["image"] as! String)
+               break
+            }
+            i += 1
+        }
+        return url
+        
+}
+    
 
     
 
@@ -462,6 +485,7 @@ import Foundation
         }
         return request
     }
+    
 
     
 }

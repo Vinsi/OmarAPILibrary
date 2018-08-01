@@ -31,7 +31,7 @@ import Foundation
     public var productstock    : Float?  = nil
     public var sku             : String? = nil
     public var sortOrder1      : Float?  = nil
-   
+    public var weightClassid   : String? = nil
     public var languageId      : String? = nil
     
     public required init(from decoder: Decoder) throws {
@@ -49,6 +49,7 @@ import Foundation
                 sku             = try container.decode(String.self, forKey: CodingKeys.sku            )
                 languageId      = try container.decode(String.self, forKey: CodingKeys.languageId     )
                 categoryName      = try container.decode(String.self, forKey: CodingKeys.categoryName     )
+                weightClassid      = try container.decode(String.self, forKey: CodingKeys.weightClassid     )
                let s_sortOrder       = try container.decode(String.self, forKey: CodingKeys.sortOrder      )
                let s_profitAmount    = try container.decode(String.self, forKey: CodingKeys.profitAmount   )
                let s_price           = try container.decode(String.self, forKey: CodingKeys.price          )
@@ -100,7 +101,7 @@ import Foundation
         case productstock  = "aproductstock"
         case sku
         case sortOrder1 = "sort_order2"
-   
+        case weightClassid = "weight_class_id"
     }
 }
 
@@ -132,9 +133,16 @@ public extension ItemModel {
         let imageBaseurl = "http://trolley.ae/image/cache"
         let resizeSquare = toSize
         let newurl = String(format: "%@/%@-%dx%d.%@",imageBaseurl,fileWithoutExtension,resizeSquare,resizeSquare,fileExtension)
-    let escapedurl = newurl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
+        let escapedurl = newurl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
          let urlPath = URL(string: escapedurl!)
          return urlPath
     
+    }
+    public func getTagImageUrl()->URL? {
+         guard let weightclassid = self.weightClassid else { return nil}
+        let newurl = String(format: "http://www.trolley.ae/catalog/view/theme/default/image/%@m.png",weightclassid)
+        let escapedurl = newurl.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
+        let urlPath = URL(string: escapedurl!)
+        return urlPath
     }
 }

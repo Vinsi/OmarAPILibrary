@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'Fakery'   , '~> 3.3.0'
 
- 
+  s.dependency 'HTMLEntities', :git => 'https://github.com/IBM-Swift/swift-html-entities.git'
 
 
 

@@ -13,6 +13,10 @@
 		A90540F020DA37A300090472 /* ITrolleyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90540EF20DA37A300090472 /* ITrolleyRepository.swift */; };
 		A90540F420DA49B700090472 /* Codable+Trolley.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90540F320DA49B700090472 /* Codable+Trolley.swift */; };
 		A90540FB20DA7A0B00090472 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90540FA20DA7A0A00090472 /* EndPointType.swift */; };
+		A93289102114DCFC00662D00 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932890C2114DCFB00662D00 /* Utilities.swift */; };
+		A93289112114DCFC00662D00 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932890D2114DCFC00662D00 /* ParseError.swift */; };
+		A93289122114DCFC00662D00 /* String+HTMLEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932890E2114DCFC00662D00 /* String+HTMLEntities.swift */; };
+		A93289132114DCFC00662D00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932890F2114DCFC00662D00 /* Constants.swift */; };
 		A93B9C7020E3523D0085E9B4 /* CommonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B9C6F20E3523D0085E9B4 /* CommonResponse.swift */; };
 		A93B9C7220E38B070085E9B4 /* OrderGetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B9C7120E38B070085E9B4 /* OrderGetModel.swift */; };
 		A93B9C7420E38EDB0085E9B4 /* ItemSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B9C7320E38EDB0085E9B4 /* ItemSearchModel.swift */; };
@@ -91,6 +95,10 @@
 		A90540EF20DA37A300090472 /* ITrolleyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITrolleyRepository.swift; sourceTree = "<group>"; };
 		A90540F320DA49B700090472 /* Codable+Trolley.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Trolley.swift"; sourceTree = "<group>"; };
 		A90540FA20DA7A0A00090472 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		A932890C2114DCFB00662D00 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A932890D2114DCFC00662D00 /* ParseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseError.swift; sourceTree = "<group>"; };
+		A932890E2114DCFC00662D00 /* String+HTMLEntities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+HTMLEntities.swift"; sourceTree = "<group>"; };
+		A932890F2114DCFC00662D00 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A93B9C6F20E3523D0085E9B4 /* CommonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonResponse.swift; sourceTree = "<group>"; };
 		A93B9C7120E38B070085E9B4 /* OrderGetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderGetModel.swift; sourceTree = "<group>"; };
 		A93B9C7320E38EDB0085E9B4 /* ItemSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchModel.swift; sourceTree = "<group>"; };
@@ -243,6 +251,7 @@
 		A90540F220DA3B3800090472 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				A932890B2114DCDD00662D00 /* HTMLDecoder */,
 				A98D17E720749E7E00543BE8 /* Status.swift */,
 				A90540F320DA49B700090472 /* Codable+Trolley.swift */,
 			);
@@ -268,6 +277,17 @@
 				A94B9F2B20E5159E00D7A53A /* APIStatus.swift */,
 			);
 			path = Respository;
+			sourceTree = "<group>";
+		};
+		A932890B2114DCDD00662D00 /* HTMLDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				A932890F2114DCFC00662D00 /* Constants.swift */,
+				A932890D2114DCFC00662D00 /* ParseError.swift */,
+				A932890E2114DCFC00662D00 /* String+HTMLEntities.swift */,
+				A932890C2114DCFB00662D00 /* Utilities.swift */,
+			);
+			path = HTMLDecoder;
 			sourceTree = "<group>";
 		};
 		A94B9F2120E4F7CC00D7A53A /* NetworkEngine */ = {
@@ -625,7 +645,6 @@
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
-				"${BUILT_PRODUCTS_DIR}/HTMLEntities/HTMLEntities.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -633,7 +652,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTMLEntities.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -699,6 +717,7 @@
 				A9D429BB20711312000C5CA6 /* ProductInSubcat.swift in Sources */,
 				A9D429B6207111B2000C5CA6 /* SavedCardModel.swift in Sources */,
 				A99162A320DFBD6A00691962 /* CouponModel.swift in Sources */,
+				A93289112114DCFC00662D00 /* ParseError.swift in Sources */,
 				A991627420DF883800691962 /* NetworkEnvironment.swift in Sources */,
 				A991629620DFA54500691962 /* TimeSlotModel.swift in Sources */,
 				A9D429AC20710942000C5CA6 /* TimeSlotDataModel.swift in Sources */,
@@ -721,7 +740,9 @@
 				A991627B20DF8AAA00691962 /* SearchSkuModel.swift in Sources */,
 				A9D429B2207110C9000C5CA6 /* CountryModel.swift in Sources */,
 				A991628120DFA15900691962 /* User.swift in Sources */,
+				A93289132114DCFC00662D00 /* Constants.swift in Sources */,
 				A94B9F2C20E5159E00D7A53A /* APIStatus.swift in Sources */,
+				A93289102114DCFC00662D00 /* Utilities.swift in Sources */,
 				A991629920DFABD200691962 /* Common.swift in Sources */,
 				A991627D20DF8BD100691962 /* SearchNameModel.swift in Sources */,
 				A991629F20DFB82F00691962 /* ForgotPasswordModel.swift in Sources */,
@@ -734,6 +755,7 @@
 				A98D17E820749E7E00543BE8 /* Status.swift in Sources */,
 				A93B9C7220E38B070085E9B4 /* OrderGetModel.swift in Sources */,
 				A90540ED20DA351700090472 /* IHTTPNetworkEngine.swift in Sources */,
+				A93289122114DCFC00662D00 /* String+HTMLEntities.swift in Sources */,
 				A991627820DF893300691962 /* Search.swift in Sources */,
 				A90540F420DA49B700090472 /* Codable+Trolley.swift in Sources */,
 				A959957E207220CB007B1132 /* AlamoFireNetworkEngine.swift in Sources */,

@@ -8,7 +8,6 @@
 
 import Foundation
 
-import HTMLEntities
 @objc public class ItemModel:NSObject, Codable {
     
     public var productId       : String? = nil

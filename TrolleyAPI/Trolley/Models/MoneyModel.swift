@@ -9,7 +9,7 @@
 import Foundation
 @objc  public class MoneyModel:NSObject,Codable{
     
-    open var value:Float!
+    public var value:Float!
     public init( amount:Float) {
         self.value = amount
     }

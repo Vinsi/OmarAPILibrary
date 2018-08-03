@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@objc  public class MoneyModel:NSObject,Codable{
+open  class MoneyModel:NSObject,Codable{
     
     public var value:Float!
     public init( amount:Float) {
@@ -16,6 +16,26 @@ import Foundation
     public func unitValue()->Float{
         return self.value
         
+    }
+    static func + (lhs: MoneyModel, rhs: MoneyModel) -> MoneyModel {
+        return  MoneyModel(amount:  lhs.value +  rhs.value)
+        
+    }
+    static func - (lhs: MoneyModel, rhs: MoneyModel) -> MoneyModel {
+        return  MoneyModel(amount:  lhs.value -  rhs.value)
+    }
+    static func *(lhs: MoneyModel, rhs: MoneyModel) -> MoneyModel {
+        return  MoneyModel(amount:  lhs.value *  rhs.value)
+    }
+
+    static public func += ( left: inout MoneyModel, right: MoneyModel) {
+        left.value = left.value + right.value
+    }
+    static public func -= ( left: inout MoneyModel, right: MoneyModel) {
+        left.value = left.value - right.value
+    }
+    static public func *= ( left: inout MoneyModel, right: MoneyModel) {
+        left.value = left.value * right.value
     }
     public required init(from decoder: Decoder) throws {
         _ = try decoder.container(keyedBy: CodingKeys.self) // defining our (keyed) container

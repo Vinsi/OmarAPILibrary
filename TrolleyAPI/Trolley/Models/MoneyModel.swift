@@ -17,14 +17,14 @@ open  class MoneyModel:NSObject,Codable{
         return self.value
         
     }
-    static func + (lhs: MoneyModel, rhs: MoneyModel) -> MoneyModel {
+    static public func + (lhs: MoneyModel, rhs: MoneyModel) -> MoneyModel {
         return  MoneyModel(amount:  lhs.value +  rhs.value)
         
     }
-    static func - (lhs: MoneyModel, rhs: MoneyModel) -> MoneyModel {
+    static public func - (lhs: MoneyModel, rhs: MoneyModel) -> MoneyModel {
         return  MoneyModel(amount:  lhs.value -  rhs.value)
     }
-    static func *(lhs: MoneyModel, rhs: MoneyModel) -> MoneyModel {
+    static public func * (lhs: MoneyModel, rhs: MoneyModel) -> MoneyModel {
         return  MoneyModel(amount:  lhs.value *  rhs.value)
     }
 

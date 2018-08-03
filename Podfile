@@ -8,7 +8,7 @@ target 'TrolleyAPI' do
   pod 'Alamofire', '~> 4.7'
   pod 'SwiftHash', '~> 2.0.1'
   pod 'Fakery' ,'~> 3.3.0'
-
+  pod 'HTMLEntities', :git => 'https://github.com/IBM-Swift/swift-html-entities.git'
 
   # Pods for TrolleyAPI
 

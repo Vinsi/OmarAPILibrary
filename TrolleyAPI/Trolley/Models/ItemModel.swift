@@ -7,10 +7,8 @@
 //
 
 import Foundation
-//public enum imageSize{
-//    case size14
-//
-//}
+
+import HTMLEntities
 @objc public class ItemModel:NSObject, Codable {
     
     public var productId       : String? = nil
@@ -38,7 +36,7 @@ import Foundation
            let container = try decoder.container(keyedBy: CodingKeys.self) // defining our (keyed) container
         
                 productId       = try container.decode(String.self, forKey: CodingKeys.productId)
-                productname     = try container.decode(String.self, forKey: CodingKeys.productname    )
+                productname     = try container.decode(String.self, forKey: CodingKeys.productname    ).htmlUnescape()
                 model           = try container.decode(String.self, forKey: CodingKeys.model          )
                 unit            = try container.decode(String.self, forKey: CodingKeys.unit           )
                 weight          = try container.decode(String.self, forKey: CodingKeys.weight         )
@@ -48,7 +46,7 @@ import Foundation
                 status          = try container.decode(String.self, forKey: CodingKeys.status         )
                 sku             = try container.decode(String.self, forKey: CodingKeys.sku            )
                 languageId      = try container.decode(String.self, forKey: CodingKeys.languageId     )
-                categoryName      = try container.decode(String.self, forKey: CodingKeys.categoryName     )
+                let scategoryName      = try container.decode(String.self, forKey: CodingKeys.categoryName     )
                 weightClassid      = try container.decode(String.self, forKey: CodingKeys.weightClassid     )
                let s_sortOrder       = try container.decode(String.self, forKey: CodingKeys.sortOrder      )
                let s_profitAmount    = try container.decode(String.self, forKey: CodingKeys.profitAmount   )
@@ -60,7 +58,7 @@ import Foundation
         
         
 
-
+                 categoryName     =   scategoryName.htmlUnescape()
                  sortOrder        =   Float( s_sortOrder    )
                  profitAmount     =   MoneyModel(amount:Float( s_profitAmount )!)
                  price            =   MoneyModel(amount: Float(s_price)!)

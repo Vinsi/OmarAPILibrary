@@ -106,12 +106,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HTMLEntities/HTMLEntities.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HTMLEntities/HTMLEntities.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

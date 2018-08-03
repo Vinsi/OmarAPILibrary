@@ -50,6 +50,7 @@
 		A99162A120DFB9A100691962 /* PaswordResetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99162A020DFB9A100691962 /* PaswordResetModel.swift */; };
 		A99162A320DFBD6A00691962 /* CouponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99162A220DFBD6A00691962 /* CouponModel.swift */; };
 		A99162A520DFC0B100691962 /* UpdateLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99162A420DFC0B100691962 /* UpdateLocation.swift */; };
+		A9C9EE412114529900BFECF3 /* MoneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C9EE402114529900BFECF3 /* MoneyModel.swift */; };
 		A9D1075B2070B20E005D952E /* TrolleyAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D107512070B20D005D952E /* TrolleyAPI.framework */; };
 		A9D107602070B20E005D952E /* TrolleyAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D1075F2070B20E005D952E /* TrolleyAPITests.swift */; };
 		A9D107622070B20E005D952E /* TrolleyAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D107542070B20D005D952E /* TrolleyAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -127,6 +128,7 @@
 		A99162A020DFB9A100691962 /* PaswordResetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaswordResetModel.swift; sourceTree = "<group>"; };
 		A99162A220DFBD6A00691962 /* CouponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponModel.swift; sourceTree = "<group>"; };
 		A99162A420DFC0B100691962 /* UpdateLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateLocation.swift; sourceTree = "<group>"; };
+		A9C9EE402114529900BFECF3 /* MoneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyModel.swift; sourceTree = "<group>"; };
 		A9D107512070B20D005D952E /* TrolleyAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrolleyAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D107542070B20D005D952E /* TrolleyAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrolleyAPI.h; sourceTree = "<group>"; };
 		A9D107552070B20D005D952E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				A99162A020DFB9A100691962 /* PaswordResetModel.swift */,
 				A99162A220DFBD6A00691962 /* CouponModel.swift */,
 				A93B9C7120E38B070085E9B4 /* OrderGetModel.swift */,
+				A9C9EE402114529900BFECF3 /* MoneyModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				A9D1074D2070B20D005D952E /* Frameworks */,
 				A9D1074E2070B20D005D952E /* Headers */,
 				A9D1074F2070B20D005D952E /* Resources */,
+				F178664F832B081221B75CBC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -507,6 +511,7 @@
 				A9D107572070B20D005D952E /* Frameworks */,
 				A9D107582070B20D005D952E /* Resources */,
 				660730F877F6C9AAAA557A68 /* [CP] Embed Pods Frameworks */,
+				4D979E52F9544065CBF0A321 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -594,6 +599,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4D979E52F9544065CBF0A321 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrolleyAPITests/Pods-TrolleyAPITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		660730F877F6C9AAAA557A68 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -636,6 +656,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F178664F832B081221B75CBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrolleyAPI/Pods-TrolleyAPI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -676,6 +711,7 @@
 				A98D17EA2074D6AE00543BE8 /* TrolleyAPIRemoteRepository.swift in Sources */,
 				A99162A520DFC0B100691962 /* UpdateLocation.swift in Sources */,
 				A93B9C7820E3AB610085E9B4 /* ITrolleyAppSession.swift in Sources */,
+				A9C9EE412114529900BFECF3 /* MoneyModel.swift in Sources */,
 				A991628920DFA1BD00691962 /* Card.swift in Sources */,
 				A93B9C7020E3523D0085E9B4 /* CommonResponse.swift in Sources */,
 				A9D429BD2071150A000C5CA6 /* NewLocation.swift in Sources */,

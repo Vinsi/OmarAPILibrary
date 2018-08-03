@@ -22,10 +22,10 @@ import Foundation
     public var categoryName     : String? = nil
     public var sortOrder       : Float?  = nil
     public var image           : String? = nil
-    public var profitAmount    : Float?  = nil
-    public var price           : Float?  = nil
-    public var actualprice     : Float?  = nil
-    public var offerprice      : Float?  = nil
+    public var profitAmount    : MoneyModel?  = nil
+    public var price           : MoneyModel?  = nil
+    public var actualprice     : MoneyModel?  = nil
+    public var offerprice      : MoneyModel?  = nil
     public var metaDescription : String? = nil
     public var status          : String? = nil
     public var productstock    : Float?  = nil
@@ -62,14 +62,14 @@ import Foundation
 
 
                  sortOrder        =   Float( s_sortOrder    )
-                 profitAmount     =   Float( s_profitAmount )
-                 price            =   Float( s_price        )
-                 actualprice      =   Float( s_actualprice  )
+                 profitAmount     =   MoneyModel(amount:Float( s_profitAmount )!)
+                 price            =   MoneyModel(amount: Float(s_price)!)
+                 actualprice      =   MoneyModel(amount: Float(s_actualprice)!  )
         if s_offerprice == nil {
-             offerprice       =   Float( 0.00   )
+             offerprice       =   MoneyModel(amount:Float( 0.00   ))
         }
         else {
-                 offerprice       =   Float( s_offerprice!   )
+            offerprice       =   MoneyModel(amount:Float( s_offerprice!   )!)
         }
                  productstock     =   Float( s_productstock )
                  sortOrder1       =   Float( s_sortOrder1   )
@@ -112,7 +112,7 @@ public extension ItemModel {
             return false
             
         }
-        if offer <= 0.0{
+        if offer.unitValue() <= 0.0{
             return false
         }
         else

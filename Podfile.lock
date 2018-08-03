@@ -12,13 +12,6 @@ DEPENDENCIES:
   - Fakery (~> 3.3.0)
   - SwiftHash (~> 2.0.1)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Alamofire
-    - CocoaLumberjack
-    - Fakery
-    - SwiftHash
-
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
@@ -27,4 +20,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 9c180542a75d2a8da8dbb1c7e140cc7a1ac1bdce
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.3.1

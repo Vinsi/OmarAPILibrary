@@ -16,17 +16,19 @@ import Foundation
 @objc public class OrderDetailsResponseDataModel: NSObject,Codable {
 
      @objc  public class Item:NSObject, Codable {
-          public  var orderProductId: String!
-           public var orderId  : String!
-           public var productId: String!
-          public  var name: String!
-          public  var model: String!
-          public  var quantity: String!
-          public  var price: String!
-           public var total: String!
-          public  var tax: String!
-          public  var edit: String!
-          public  var refund: String!
+
+          public  var orderProductId  : String!
+          public  var orderId         : String!
+          public  var productId       : String!
+          public  var name            : String!
+          public  var model           : String!
+          public  var quantity        : String!
+          public  var price           : MoneyModel!
+          public  var total           : String!
+          public  var tax             : String!
+          public  var edit            : String!
+          public  var refund          : String!
+
             private enum CodingKeys: String, CodingKey {
                 case orderProductId = "order_product_id"
                 case orderId = "order_id"
@@ -40,6 +42,25 @@ import Foundation
                 case edit
                 case refund
             }
+        public required init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self) // defining our (keyed) container
+            
+            orderProductId  = try container.decode(String.self, forKey: CodingKeys.orderProductId   )
+            orderId         = try container.decode(String.self, forKey: CodingKeys.orderId          )
+            productId       = try container.decode(String.self, forKey: CodingKeys.productId        )
+            name            = try container.decode(String.self, forKey: CodingKeys.name             )
+            model           = try container.decode(String.self, forKey: CodingKeys.model            )
+            quantity        = try container.decode(String.self, forKey: CodingKeys.quantity         )
+        let sprice          = try container.decode(String.self, forKey: CodingKeys.price            )
+            total           = try container.decode(String.self, forKey: CodingKeys.total            )
+            tax             = try container.decode(String.self, forKey: CodingKeys.tax              )
+            edit            = try container.decode(String.self, forKey: CodingKeys.edit             )
+            refund          = try container.decode(String.self, forKey: CodingKeys.refund           )
+            price           = MoneyModel(amount:Float( sprice )!)
+            
+            
+            
+        }
         }
       @objc  public var items: [Item]? = nil
             @objc  public class Subitem: NSObject,Codable {
@@ -61,7 +82,8 @@ import Foundation
             }
         }
         public var subitems: [Subitem]? = nil
-  
+    
+
 }
 
 

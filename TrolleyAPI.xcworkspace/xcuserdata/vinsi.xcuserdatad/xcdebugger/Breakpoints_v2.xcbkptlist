@@ -132,7 +132,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.776149"
+            timestampString = "563221063.618302"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
@@ -148,7 +148,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.776632"
+            timestampString = "563221063.618808"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "170"
@@ -180,7 +180,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.777059"
+            timestampString = "563221063.619207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "189"
@@ -196,7 +196,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.777406"
+            timestampString = "563221063.619554"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "190"
@@ -212,7 +212,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.777739"
+            timestampString = "563221063.619895"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "200"
@@ -228,7 +228,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.77806"
+            timestampString = "563221063.620236"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "261"
@@ -244,12 +244,12 @@
                   moduleName = "TrolleyAPITests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vinsi/Documents/Library/Vinsi/TrolleyAPITests/TrolleyAPITests.swift"
-                  timestampString = "555015630.996559"
+                  timestampString = "563221064.695583"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "261"
                   endingLineNumber = "261"
-                  offsetFromSymbolStart = "2912">
+                  offsetFromSymbolStart = "3056">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -259,12 +259,12 @@
                   moduleName = "TrolleyAPITests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vinsi/Documents/Library/Vinsi/TrolleyAPITests/TrolleyAPITests.swift"
-                  timestampString = "555015630.999452"
+                  timestampString = "563221064.698468"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "264"
                   endingLineNumber = "264"
-                  offsetFromSymbolStart = "32">
+                  offsetFromSymbolStart = "56">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -276,7 +276,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.778378"
+            timestampString = "563221063.6205651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "289"
@@ -302,7 +302,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.7786959"
+            timestampString = "563221063.620892"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
@@ -318,7 +318,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.779012"
+            timestampString = "563221063.621225"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -334,7 +334,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.779321"
+            timestampString = "563221063.62155"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
@@ -350,7 +350,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.7796299"
+            timestampString = "563221063.621875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "287"
@@ -366,12 +366,12 @@
                   moduleName = "TrolleyAPITests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vinsi/Documents/Library/Vinsi/TrolleyAPITests/TrolleyAPITests.swift"
-                  timestampString = "555015631.019876"
+                  timestampString = "563221064.717979"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "287"
                   endingLineNumber = "287"
-                  offsetFromSymbolStart = "178">
+                  offsetFromSymbolStart = "194">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -381,12 +381,12 @@
                   moduleName = "TrolleyAPITests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vinsi/Documents/Library/Vinsi/TrolleyAPITests/TrolleyAPITests.swift"
-                  timestampString = "555015631.022532"
+                  timestampString = "563221064.720632"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "289"
                   endingLineNumber = "289"
-                  offsetFromSymbolStart = "32">
+                  offsetFromSymbolStart = "56">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -398,7 +398,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.7799391"
+            timestampString = "563221063.6222301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "345"
@@ -414,13 +414,77 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TrolleyAPITests/TrolleyAPITests.swift"
-            timestampString = "554982364.780247"
+            timestampString = "563221063.622563"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "348"
             endingLineNumber = "348"
             landmarkName = "testBanner()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrolleyAPITests/TrolleyAPITests.swift"
+            timestampString = "563221063.622895"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "testCategoryFetch()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrolleyAPITests/TrolleyAPITests.swift"
+            timestampString = "563221063.623227"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "testCategoryFetch()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TrolleyAPITests.TrolleyAPITests.testCategoryFetch() -&gt; ()"
+                  moduleName = "TrolleyAPITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinsi/Documents/Library/Vinsi/TrolleyAPITests/TrolleyAPITests.swift"
+                  timestampString = "563221064.736895"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "97">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TrolleyAPI.APIStatus, Swift.Optional&lt;Swift.Array&lt;TrolleyAPI.CategoryResponseDataModel&gt;&gt;) -&gt; () in TrolleyAPITests.TrolleyAPITests.testCategoryFetch() -&gt; ()"
+                  moduleName = "TrolleyAPITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinsi/Documents/Library/Vinsi/TrolleyAPITests/TrolleyAPITests.swift"
+                  timestampString = "563221064.73959"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
